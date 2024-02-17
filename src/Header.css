@@ -2,12 +2,12 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #007BFF;
+    background-color: #fcfcfa;
     color: white;
     padding: 10px;
 }
 .navbar a {
-    color: white;
+    color: #19333a;
     text-decoration: none;
     font-size: 18px;
 }
