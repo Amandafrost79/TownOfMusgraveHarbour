@@ -1,11 +1,17 @@
 import React from 'react';
 import './Header.css';
+// import logo from '/images/logo.png'
 
 function Header() {
     return (
       <header>
         <nav className="navbar">
-          <ul>
+          <div>
+            <div className="logo-container">
+              <img src="public/images/musgrave.png" alt="Logo" />
+            </div> 
+          </div>
+          <ul className="nav-links">
             <li><a href="#welcome-section">Home</a></li>
             <li><a href="#town">Town Council</a></li>
             <li><a href="#community">Our Community</a></li>

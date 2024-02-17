@@ -2,9 +2,9 @@
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: #fcfcfa;
+    /* background-color: #fcfcfa;
     color: white;
-    padding: 10px;
+    padding: 10px; */
 }
 .navbar a {
     color: #19333a;
@@ -51,4 +51,8 @@
         font-size: 14px;
         padding: 5px 0;
     }
+} 
+
+img {
+    width: 200px;
 }
