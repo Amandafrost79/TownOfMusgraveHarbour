@@ -8,7 +8,7 @@ function Header() {
         <nav className="navbar">
           <div>
             <div className="logo-container">
-              <img src="./public/images/musgrave.png" alt="Logo" />
+              <img src="src/images/Musgrave.png" alt="Logo" />
             </div> 
           </div>
           <ul className="nav-links">
