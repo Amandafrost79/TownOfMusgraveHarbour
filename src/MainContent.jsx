@@ -5,7 +5,7 @@ const MainContent = () => {
   return (
     <main>
       <div className="video-section">
-        <video autoPlay muted loop>
+        <video autoPlay muted loop playsInline>
           <source src="videos/VideoContent.mp4" type="video/mp4" />
         </video>
       </div>
