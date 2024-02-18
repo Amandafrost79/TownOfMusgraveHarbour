@@ -1,6 +1,7 @@
 #contact-section {
-    background-color: #003366;
-    color: #ffffff;
+    background-image: linear-gradient(to right, #3a6e75, #B3D3D4);
+    background-color: #19333c;
+    color: #fff;
     padding: 30px;
 }
 .footer-content {
@@ -10,7 +11,7 @@
     flex-wrap: wrap;
 }
 #contact-section h2 {
-    color: #ffd700; 
+    color: #19333c; 
     margin-bottom: 15px; 
 }
 
@@ -27,9 +28,9 @@
     width: 40%; 
 }
 
-.footer-right h2, .footer-left h2 {
+/* .footer-right h2, .footer-left h2 {
     color: #ffd700;
-}
+} */
 
 .footer-right p, .footer-left p {
     line-height: 1.5;
@@ -47,9 +48,9 @@
 .footer-bottom {
     text-align: center;
     width: 100%;
-    margin-top: 20px; 
-    border-top: 1px solid #b0c4de; 
-    padding-top: 20px; 
+    margin-top: 10px; 
+    border-top: 1px solid #C6EBE9; 
+    padding-top: 10px; 
 }
 
 @media (max-width: 768px) {
