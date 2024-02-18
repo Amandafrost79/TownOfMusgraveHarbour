@@ -41,22 +41,29 @@
     }
     .navbar li {
         margin: 5px 0;
-        width: 70%;
-        text-align: ;
+        width: 40%;
+        text-align: center;
+        
     }
     .navbar a {
-        padding: 8px 0;
-        font-size: 16px;
+        padding: 2px 7px;
+        font-size: 14px;
     }
 }
 @media (max-width: 480px) {
     .navbar li {
+        margin: 0;
         
     }
     .navbar a {
         font-size: 14px;
         padding: 5px 0;
     }
+    .logo-container img {
+        height: auto;
+    
+    }
+    
 } 
 
 img {
@@ -64,7 +71,7 @@ img {
 }
 
 header {
-    background-image: linear-gradient(to right, #657c82, #e5f0ee);
+    background-image: linear-gradient(to right, #82898a, #e5f0ee);
     background-color: #d8d8d4; 
     color: #2C5A6A;
     padding: 0;
