@@ -1,17 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './Header.css';
 // import logo from '/images/logo.png'
 
 function Header() {
+    const [isOpen, setIsOpen] = useState(false);
+    const toggleNavbar = () => setIsOpen(!isOpen);
+
     return (
       <header>
         <nav className="navbar">
-          <div>
+          
             <div className="logo-container">
               <img src="images/Musgrave.png" alt="Logo" />
             </div> 
-          </div>
-          <ul className="nav-links">
+            <button className="hamburger" onClick={toggleNavbar}>
+              &#9776; {/* Hamburger icon */}
+            </button>
+          <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
             <li><a href="#welcome-section">Home</a></li>
             <li><a href="#town">Town Council</a></li>
             <li><a href="#community">Our Community</a></li>
