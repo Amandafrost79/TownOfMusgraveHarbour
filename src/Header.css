@@ -25,7 +25,7 @@
 }
 .navbar a:hover {
     background-color: #;
-    color: #D78651;
+    color: white;
     transform: translateY(-2px);
 }
 /* @media (max-width: 768px){
@@ -65,13 +65,13 @@ img {
 }
 
 header {
-    background-image: linear-gradient(to right, #dae0e2, #0a6380);
+    background-image: linear-gradient(45deg, whitesmoke, rgb(82, 77, 77));
     background-color: #d8d8d4; 
     color: #7da1ad;
     padding: 0;
     margin: 7px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-left: 15px solid #0a6380;
+    
     /* position: sticky;
     top: 0;
     z-index: 1000; */
