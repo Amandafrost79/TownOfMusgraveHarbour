@@ -7,7 +7,7 @@
     flex-wrap: wrap;
 }
 .navbar a {
-    color: #2C5A6A;
+    color: #0f1314;
     text-decoration: none;
     font-size: 20px;
     padding: 5px 10px;
@@ -21,11 +21,11 @@
 }
 .navbar li {
     display: inline;
-    margin: 0 20px;
+    margin: 5px;
 }
 .navbar a:hover {
-    background-color: #c8cdcc;
-    color: #000000;
+    background-color: #;
+    color: #D78651;
     transform: translateY(-2px);
 }
 /* @media (max-width: 768px){
@@ -61,24 +61,24 @@
 }  */
 
 img {
-    width: 200px;
+    width: 
 }
 
 header {
-    background-image: linear-gradient(to right, #82898a, #e5f0ee);
+    background-image: linear-gradient(to right, #dae0e2, #0a6380);
     background-color: #d8d8d4; 
-    color: #2C5A6A;
+    color: #7da1ad;
     padding: 0;
     margin: 7px 0;
     box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-    border-left: 15px solid #173039;
+    border-left: 15px solid #0a6380;
     /* position: sticky;
     top: 0;
     z-index: 1000; */
 }
 
 .logo-container img {
-    height: 200px; 
+    height: 180px; 
     transition: transform 0.2s ease; 
   }
   
@@ -98,34 +98,37 @@ header {
 
   /* Hamburger Menu Button */
 .hamburger {
-    display: none; /* Hide by default */
-    font-size: 30px; /* Icon size */
+    display: none; 
+    font-size: 30px; 
     background: none;
     border: none;
-    color: #ffffff; /* Adjust based on your header color */
+    color: #ffffff; 
     cursor: pointer;
   }
   
   /* Responsive Styles */
 @media (max-width: 768px) {
     .hamburger {
-      display: block; /* Show hamburger icon on small screens */
+      display: block; 
     }
   
     .nav-links {
-      display: none; /* Hide nav links by default on small screens */
+      display: none; 
       /* flex-direction: column;
       width: 100%;
       text-align: center; */
     }
   
     .nav-links.open {
-      display: flex; /* Show when hamburger menu is toggled */
+      display: flex; 
       flex-direction: column;
     }
   
     .nav-links li {
-      margin: 10px 0; /* Add space between links */
+      margin: 10px 0; 
+    }
+    .logo-container img {
+      height: 120px;
     }
   }
   

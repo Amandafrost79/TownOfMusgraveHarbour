@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    border-left: 15px solid #173039;
+    border-left: 15px solid #;
 }
 .video-section video {
     width: 100%;
@@ -81,7 +81,7 @@
     padding-right: 8px;
     padding-left: 3px;
     font-weight: bold;
-    color: #2C5A6A; 
+    color: #D78651; 
 }
 
 

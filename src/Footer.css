@@ -1,8 +1,9 @@
 #contact-section {
-    background-image: linear-gradient(to right, #3a6e75, #B3D3D4);
+    background-image: linear-gradient(to right, #5a8a9a, #B3D3D4);
     background-color: #19333c;
     color: #fff;
     padding: 30px;
+    border-left: 15px solid #E59A56;
 }
 .footer-content {
     display: flex;
@@ -38,7 +39,7 @@
 }
 
 #contact-section a {
-    color: #ffd700;
+    color: #19333c;
     text-decoration: none;
 }
 
