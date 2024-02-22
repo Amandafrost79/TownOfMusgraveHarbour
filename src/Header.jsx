@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 import './Header.css';
 // import logo from '/images/logo.png'
 
@@ -17,13 +18,13 @@ function Header() {
               &#9776; {/* Hamburger icon */}
             </button>
           <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-            <li><a href="#welcome-section">Home</a></li>
-            <li><a href="#town">Town Council</a></li>
-            <li><a href="#community">Our Community</a></li>
-            <li><a href="#park">Banting Memorial Park</a></li>
-            <li><a href="#fire">Fire Department</a></li>
-            <li><a href="#festival">Scuff 'n Scoff Festival</a></li>
-            <li><a href="#contact-section">Contact Us</a></li>
+            <li><Link to="/home-page">Home</Link></li>
+            <li><Link to="/town">Town Council</Link></li>
+            <li><Link to="/community">Our Community</Link></li>
+            <li><Link to="/banting-park">Banting Memorial Park</Link></li> 
+            <li><Link to="/fire">Fire Department</Link></li>
+            <li><Link to="/festival">Scuff 'n Scoff Festival</Link></li>
+            <li><Link to="/contact">Contact Us</Link></li>
           </ul>
         </nav>
       </header>

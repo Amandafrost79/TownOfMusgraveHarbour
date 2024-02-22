@@ -5,7 +5,7 @@ const MainContent = () => {
   return (
     <main>
       <div className="video-section">
-      <div className="overlay-text">Town of Musgrave Harbour</div>
+      <div className="overlay-text">Town of Musgrave Harbour</div>o
         <video autoPlay muted loop playsInline>
           <source src="videos/TOMH.mp4" type="video/mp4" />
         </video>
