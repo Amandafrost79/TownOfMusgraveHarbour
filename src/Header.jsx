@@ -18,13 +18,13 @@ function Header() {
               &#9776; {/* Hamburger icon */}
             </button>
           <ul className={`nav-links ${isOpen ? 'open' : ''}`}>
-            <li><Link to="/home-page">Home</Link></li>
+            <li><Link to="/">Home</Link></li>
             <li><Link to="/town">Town Council</Link></li>
             <li><Link to="/community">Our Community</Link></li>
             <li><Link to="/banting-park">Banting Memorial Park</Link></li> 
             <li><Link to="/fire">Fire Department</Link></li>
             <li><Link to="/festival">Scuff 'n Scoff Festival</Link></li>
-            <li><Link to="/contact">Contact Us</Link></li>
+            {/* <li><Link to="/contact">Contact Us</Link></li> */}
           </ul>
         </nav>
       </header>
