@@ -1,7 +1,91 @@
-.parkContainer {
-    /* Custom styles specific to the Banting Memorial Park page */
-    background-color: #f0f9ff;
+/* General Body and Typography Enhancements */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern, readable font */
+    color: #333; /* Slightly softer than black for text */
   }
   
-  /* Add more custom styles as needed */
+  /* Enhance Headings with More Style */
+  h1, h2, h3 {
+    font-weight: 700; /* Bold headings to stand out */
+    margin-bottom: 0.5rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem; /* Larger size for main heading */
+    color: #204d74; /* Deep blue for extra contrast */
+  }
+  
+  h2 {
+    color: #5d7b97; /* Slightly lighter blue for subheadings */
+  }
+  
+  h3 {
+    font-size: 1.25rem;
+    color: #6c8ebf; /* Even lighter, for smaller headings */
+  }
+  
+  /* Paragraph Styling */
+  p {
+    margin-bottom: 1rem;
+  }
+  
+  /* Link Styling */
+  a {
+    color: #007bff; /* Bootstrap default blue for consistency */
+    text-decoration: none; /* Removes underline */
+  }
+  
+  a:hover {
+    text-decoration: underline; /* Adds underline on hover for visual feedback */
+  }
+  
+  /* Custom Button Styling */
+  .btn-primary {
+    background-color: #347AB7; /* Custom primary button color */
+    border-color: #2e6da4;
+  }
+  
+  .btn-primary:hover {
+    background-color: #2e6da4; /* Darken button on hover */
+    border-color: #204d74;
+  }
+  
+  /* Card Styling for Sections like Gallery */
+  .card {
+    box-shadow: 0 0.125rem 0.25rem rgba(0,0,0,0.075); /* Adds subtle shadow to cards */
+    margin-bottom: 1rem; /* Adds margin to the bottom for spacing */
+  }
+  
+  .card-img-top {
+    border-top-left-radius: calc(0.25rem - 1px);
+    border-top-right-radius: calc(0.25rem - 1px);
+  }
+  
+  .card-body {
+    padding: 1rem; /* Padding inside the card for spacing */
+  }
+  
+  /* Enhancements for the Gallery Section */
+  .gallery {
+    margin-top: 2rem;
+  }
+  
+  .gallery img:hover {
+    transform: scale(1.1); /* Slightly larger scale on hover for emphasis */
+    cursor: pointer; /* Changes cursor to indicate clickable */
+  }
+  
+  /* Responsive Grid Adjustments for Gallery */
+  @media (max-width: 768px) {
+    .gallery .col-md-4 {
+      margin-bottom: 1rem;
+    }
+  }
+  
+  /* Additional Responsive Adjustments */
+  @media (max-width: 576px) {
+    h1 {
+      font-size: 2rem; /* Smaller font size for h1 on very small screens */
+    }
+  }
   
