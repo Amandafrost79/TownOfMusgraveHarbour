@@ -39,21 +39,21 @@ const BantingPark = () => {
           <div className="row">
             <div className="col-md-4 mb-3">
               <img
-                src="TownOfMusgraveHarbour/images/IMG_8795.JPG"
+                src="TownOfMusgraveHarbour/images/park2.jpg"
                 alt="Description"
                 className="img-fluid"
               />
             </div>
             <div className="col-md-4 mb-3">
               <img
-                src="TownOfMusgraveHarbour/images/IMG_2624.JPG"
+                src="TownOfMusgraveHarbour/images/park1.jpg"
                 alt="Description"
                 className="img-fluid"
               />
             </div>
             <div className="col-md-4 mb-3">
               <img
-                src="TownOfMusgraveHarbour/images/Photo_6553989_DJI_389_jpg_5469436_0_202171419514_photo_original 2.JPG"
+                src="TownOfMusgraveHarbour/images/park3.jpg"
                 alt="Description"
                 className="img-fluid"
               />
