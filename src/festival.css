@@ -1,0 +1,56 @@
+/* Festival.css */
+body {
+    background-color: ; /* Soft, sandy background color for a festive vibe */
+  }
+  
+  .festival-header {
+    background-color:; /* Salmon color for the header background */
+    color: #ffffff; /* White color for the header text */
+    padding: 2rem 0; /* Padding for spacing */
+    text-align: center; /* Center aligns the header content */
+  }
+  
+  .festival-title {
+    font-size: 2.5rem; /* Larger font size for the title */
+    font-weight: bold; /* Bold font weight for emphasis */
+  }
+  
+  .festival-tagline {
+    font-size: 1.2rem; /* Smaller font size than the title for the tagline */
+    margin-top: 0.5rem; /* Margin top for spacing between title and tagline */
+  }
+  
+  .activity-card {
+    border: none; /* Removes the default card border */
+    transition: transform 0.3s; /* Transition effect for scaling */
+  }
+  
+  .activity-card:hover {
+    transform: translateY(-5px); /* Moves the card up slightly on hover */
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2); /* Adds shadow for depth */
+  }
+  
+  .card-img-top {
+    height: 180px; /* Sets a fixed height for card images */
+    object-fit: cover; /* Ensures the image covers the card area */
+  }
+  
+  .card-title {
+    color: #007bff; /* Primary Bootstrap blue for titles */
+  }
+  
+  .card-text {
+    color: #555; /* Dark grey for text for readability */
+  }
+  
+  .activity-row {
+    margin-bottom: 2rem; /* Bottom margin for spacing between rows */
+  }
+  
+  .footer {
+    background-color: #007bff; /* Matching the card-title color */
+    color: #fff; /* White text for contrast */
+    padding: 1rem 0; /* Padding for spacing */
+    text-align: center; /* Center aligns the footer content */
+  }
+  

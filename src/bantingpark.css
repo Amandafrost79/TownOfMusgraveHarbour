@@ -1,4 +1,52 @@
-/* General Body and Typography Enhancements */
+/* BantingPark.css */
+body {
+  background-color: #f0f2f5; /* Light grey background for a subtle look */
+}
+
+.container {
+  max-width: 1200px; /* Adjust container width as per your design preference */
+}
+
+h1 {
+  color: #003366; /* Deep blue for headings to add contrast */
+  margin-bottom: 1rem; /* Spacing below the heading */
+}
+
+p {
+  color: #333333; /* Dark grey for paragraph text for better readability */
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  border: none; /* Remove default border */
+}
+
+.card-title {
+  color: #0056b3; /* Shade of blue for card titles */
+}
+
+.card-text {
+  color: #666666; /* Medium grey for card text */
+}
+
+.btn-primary {
+  background-color: #007bff; /* Primary button color */
+  border-color: #007bff; /* Button border color */
+  border-radius: 0.25rem; /* Rounded corners for buttons */
+}
+
+.btn-primary:hover {
+  background-color: #0056b3; /* Darker shade on hover for visual feedback */
+  border-color: #0056b3;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .card {
+    margin-bottom: 2rem; /* Increase spacing for stacked cards on smaller screens */
+  }
+}
+
 body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif; /* Modern, readable font */
     color: #333; /* Slightly softer than black for text */
@@ -87,5 +135,5 @@ body {
     h1 {
       font-size: 2rem; /* Smaller font size for h1 on very small screens */
     }
-  }
-  
+  } 
+     
