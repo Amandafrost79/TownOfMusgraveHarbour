@@ -1,4 +1,4 @@
-#contact-section {
+/* #contact-section {
     background-image: linear-gradient(to right, #5a8a9a, #B3D3D4);
     background-color: #19333c;
     color: #fff;
@@ -28,10 +28,6 @@
 .footer-left, .footer-right {
     width: 40%; 
 }
-
-/* .footer-right h2, .footer-left h2 {
-    color: #ffd700;
-} */
 
 .footer-right p, .footer-left p {
     line-height: 1.5;
@@ -65,4 +61,50 @@
     #contact-section {
         text-align: center; 
     }
-}
+} */
+
+/* Footer.css */
+
+/* Footer.css */
+.footer {
+    background-color: #76a0cb; /* Dark footer background for contrast */
+    color: #ffffff; /* Light text color for readability */
+    padding: 40px 0; /* Padding around the footer content */
+  }
+  
+  .footer a {
+    color: #d1e7dd; /* Slightly lighter color for links for readability */
+    transition: color 0.3s; /* Smooth transition for hover effects */
+  }
+  
+  .footer a:hover {
+    color: #f8f9fa; /* Color change on hover for visual feedback */
+  }
+  
+  .footer-section h5 {
+    color: #ffc107; /* Color for section headings to stand out */
+    margin-bottom: 20px; /* Spacing below section headings */
+  }
+  
+  .footer-section p, .footer-section a {
+    font-size: 0.9rem; /* Smaller font size for detailed text */
+    line-height: 1.7; /* Line height for improved readability */
+  }
+  
+  .footer-credits {
+    margin-top: 20px; /* Space above the credits section */
+    text-align: center; /* Center-align the credits for consistency */
+    font-size: 0.8rem; /* Smaller font size for the credits text */
+    color: #adb5bd; /* Muted color for the credits to differentiate from main content */
+  }
+  
+  .footer-credits strong {
+    color: #ffffff; /* Bright color for names to highlight */
+  }
+  
+  @media (max-width: 768px) {
+    .footer-section, .footer-credits {
+      text-align: center; /* Center-align content on smaller screens */
+    }
+  }
+  

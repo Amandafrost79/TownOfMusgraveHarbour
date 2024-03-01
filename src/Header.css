@@ -1,4 +1,4 @@
-.navbar {
+/* .navbar {
     display: flex;
     justify-content: space-around;
     align-items: center; 
@@ -27,7 +27,7 @@
     background-color: #;
     color: white;
     transform: translateY(-2px);
-}
+} */
 /* @media (max-width: 768px){
     .navbar {
         flex-direction: column;
@@ -60,7 +60,7 @@
     
 }  */
 
-img {
+/* img {
     width: 
 }
 
@@ -70,14 +70,14 @@ header {
     color: #7da1ad;
     padding: 0;
     margin: 7px 0;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1); */
     
     /* position: sticky;
     top: 0;
     z-index: 1000; */
-}
 
-.logo-container img {
+
+/* .logo-container img {
     height: 180px; 
     transition: transform 0.2s ease; 
   }
@@ -89,14 +89,14 @@ header {
 .nav-links {
     display: flex;
     /* transition: all 0.3s ease; */
-  }
   
-.nav-links:hover {
+  
+/* .nav-links:hover {
     transform: translateY(-2px); 
     box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
   }
 
-  /* Hamburger Menu Button */
+  Hamburger Menu Button
 .hamburger {
     display: none; 
     font-size: 30px; 
@@ -107,7 +107,7 @@ header {
   }
   
   /* Responsive Styles */
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
     .hamburger {
       display: block; 
     }
@@ -117,9 +117,9 @@ header {
       /* flex-direction: column;
       width: 100%;
       text-align: center; */
-    }
+    
   
-    .nav-links.open {
+    /* .nav-links.open {
       display: flex; 
       flex-direction: column;
     }
@@ -129,6 +129,60 @@ header {
     }
     .logo-container img {
       height: 120px;
-    }
-  }
+    } */
   
+
+  /* Header.css */
+.navbar {
+  background-image: linear-gradient(to right, #1c478d, #3a99c8, #9CECFB); 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+}
+
+.navbar-brand {
+  font-weight: bold;
+  color: #ffffff !important; /* Ensures the brand text is white */
+  transition: transform 0.3s ease-in-out; /* Smooth transform for hover effects */
+}
+
+.navbar-brand img {
+  margin-right: 10px; /* Space between logo and brand name */
+  transition: transform 0.3s ease-in-out; /* Smooth transform for logo hover */
+}
+
+.navbar-brand:hover,
+.navbar-brand:focus {
+  transform: scale(1.05); /* Slightly enlarges the brand on hover */
+}
+
+.nav-link {
+  color: black !important; /* White text for links */
+  font-weight: 500;
+  transition: color 0.2s ease-in-out; /* Smooth color transition for hover */
+}
+
+.nav-link:hover,
+.nav-link:focus {
+  color: white !important; /* Changes text color on hover */
+  text-decoration: underline; /* Underlines text on hover for emphasis */
+  transform: translateY(-2px); 
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
+}
+
+.navbar-toggler {
+  border-color: rgba(255, 255, 255, 0.5); 
+}
+
+.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); /* Customizes the toggle icon color */
+}
+
+/* Adjusts the dropdown menu style */
+/* .navbar-collapse {
+  background-color: rgba(0, 0, 0, 0.5); 
+} */
+
+@media (max-width: 991.98px) {
+  .navbar-nav .nav-link {
+    color: #fff !important; /* Ensures collapsed menu links are white */
+  }
+}
