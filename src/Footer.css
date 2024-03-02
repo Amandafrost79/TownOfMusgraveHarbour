@@ -63,48 +63,38 @@
     }
 } */
 
-/* Footer.css */
-
-/* Footer.css */
 .footer {
-    background-color: #76a0cb; /* Dark footer background for contrast */
-    color: #ffffff; /* Light text color for readability */
-    padding: 40px 0; /* Padding around the footer content */
+    background-color: #3a99c8; /* Solid color from your header's gradient */
+    color: white; /* Ensures high contrast for readability */
+    padding: 5px 0; /* Minimally reduces padding to decrease height */
+    font-size: 0.75rem; /* Decreases font size for compactness */
+    text-align: center; /* Central alignment for a tidy appearance */
   }
   
   .footer a {
-    color: #d1e7dd; /* Slightly lighter color for links for readability */
-    transition: color 0.3s; /* Smooth transition for hover effects */
+    color: gold; /* A contrasting color from the header for links */
+    padding: 0 5px; /* Minimal padding to ensure clickable area */
+    transition: color 0.2s; /* Smooth transition for hover effects */
   }
   
   .footer a:hover {
-    color: #f8f9fa; /* Color change on hover for visual feedback */
-  }
-  
-  .footer-section h5 {
-    color: #ffc107; /* Color for section headings to stand out */
-    margin-bottom: 20px; /* Spacing below section headings */
-  }
-  
-  .footer-section p, .footer-section a {
-    font-size: 0.9rem; /* Smaller font size for detailed text */
-    line-height: 1.7; /* Line height for improved readability */
+    color: #ffffff; /* Changes to white on hover for interaction feedback */
   }
   
   .footer-credits {
-    margin-top: 20px; /* Space above the credits section */
-    text-align: center; /* Center-align the credits for consistency */
-    font-size: 0.8rem; /* Smaller font size for the credits text */
-    color: #adb5bd; /* Muted color for the credits to differentiate from main content */
+    margin-top: 5px; /* Keeps a tight layout with minimal top margin */
+    border-top: 1px solid #1c478d; /* Adds a subtle top border for visual separation */
+    padding-top: 5px; /* Minimal padding above the credits */
   }
   
-  .footer-credits strong {
-    color: #ffffff; /* Bright color for names to highlight */
-  }
-  
+  /* Ensures the footer doesn't become too crowded on small screens */
   @media (max-width: 768px) {
-    .footer-section, .footer-credits {
-      text-align: center; /* Center-align content on smaller screens */
+    .footer {
+      padding: 5px 0; /* Keeps padding minimal for compactness */
+      font-size: 0.75rem; /* Adjusts font size for readability on small screens */
+    }
+    .footer a {
+      padding: 0 3px; /* Adjusts link padding for space efficiency */
     }
   }
   

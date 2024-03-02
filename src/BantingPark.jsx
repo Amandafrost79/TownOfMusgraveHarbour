@@ -90,10 +90,7 @@ const BantingPark = () => {
         {/* Feature 1 */}
         <Col md={4} className="mb-4">
           <Card>
-            <Card.Img
-              variant="top"
-              src="TownOfMusgraveHarbour/images/park1.jpg"
-            />
+            <Card.Img variant="top" src="/images/park1.jpg" />
             <Card.Body>
               <Card.Title>Nature Trails</Card.Title>
               <Card.Text>
@@ -107,10 +104,7 @@ const BantingPark = () => {
         {/* Feature 2 */}
         <Col md={4} className="mb-4">
           <Card>
-            <Card.Img
-              variant="top"
-              src="TownOfMusgraveHarbour/images/park2.jpg"
-            />
+            <Card.Img variant="top" src="/images/park2.jpg" />
             <Card.Body>
               <Card.Title>Playgrounds</Card.Title>
               <Card.Text>
@@ -124,10 +118,7 @@ const BantingPark = () => {
         {/* Feature 3 */}
         <Col md={4} className="mb-4">
           <Card>
-            <Card.Img
-              variant="top"
-              src="TownOfMusgraveHarbour/images/park4.jpg"
-            />
+            <Card.Img variant="top" src="/images/park4.jpg" />
             <Card.Body>
               <Card.Title>Community Events</Card.Title>
               <Card.Text>

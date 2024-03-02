@@ -138,13 +138,13 @@ function Footer() {
           <Col md={12} className="footer-credits">
             <p>
               Website developed by Freelance Web Developer,{" "}
-              <strong>Amanda Frost</strong>.
-            </p>
-            <p>
+              <strong>Amanda Frost</strong>.<br />
+              {/* <p>
               Photography and videography provided by{" "}
               <strong>Josh Hicks Photography</strong>.
+            </p> */}
+              &copy; 2024 Town of Musgrave Harbour. All rights reserved.
             </p>
-            <p>&copy; 2024 Town of Musgrave Harbour. All rights reserved.</p>
           </Col>
         </Row>
       </Container>

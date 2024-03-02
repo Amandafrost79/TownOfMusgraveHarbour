@@ -136,17 +136,23 @@ header {
 .navbar {
   background-image: linear-gradient(to right, #1c478d, #3a99c8, #9CECFB); 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
+  padding: 0.5rem 1rem;
 }
 
 .navbar-brand {
   font-weight: bold;
   color: #ffffff !important; /* Ensures the brand text is white */
   transition: transform 0.3s ease-in-out; /* Smooth transform for hover effects */
+  padding: 0;
+  margin-right: 1rem;
 }
 
 .navbar-brand img {
   margin-right: 10px; /* Space between logo and brand name */
   transition: transform 0.3s ease-in-out; /* Smooth transform for logo hover */
+  height: auto;
+  width: auto;
+  max-height: 120px;
 }
 
 .navbar-brand:hover,
@@ -158,6 +164,7 @@ header {
   color: black !important; /* White text for links */
   font-weight: 500;
   transition: color 0.2s ease-in-out; /* Smooth color transition for hover */
+  padding: 0 0.5rem;
 }
 
 .nav-link:hover,

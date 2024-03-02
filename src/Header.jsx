@@ -54,8 +54,8 @@ const Header = () => {
         <Navbar.Brand as={Link} to="/">
           <img
             src={logo}
-            width="100"
-            height="100"
+            width="120"
+            height="120"
             className="d-inline-block align-top"
             alt="Municipality Logo"
           />{" "}

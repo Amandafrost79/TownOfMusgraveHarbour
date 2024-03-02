@@ -47,10 +47,4 @@ body {
     margin-bottom: 2rem; /* Bottom margin for spacing between rows */
   }
   
-  .footer {
-    background-color: #007bff; /* Matching the card-title color */
-    color: #fff; /* White text for contrast */
-    padding: 1rem 0; /* Padding for spacing */
-    text-align: center; /* Center aligns the footer content */
-  }
   
