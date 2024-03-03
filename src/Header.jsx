@@ -51,7 +51,7 @@ const Header = () => {
   return (
     <Navbar bg="light" expand="lg" sticky="top">
       <Container>
-        <Navbar.Brand as={Link} to="/">
+        <Navbar.Brand as={Link} to="/TownOfMusgraveHarbour">
           <img
             src={logo}
             width="120"
@@ -63,7 +63,7 @@ const Header = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/">
+            <Nav.Link as={Link} to="/TownOfMusgraveHarbour">
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/town">
