@@ -27,7 +27,14 @@ const Town = () => {
             <Card.Body>
               <Card.Title>Town Council</Card.Title>
               <ListGroup variant="flush">
-                <ListGroup.Item>Council Member 1</ListGroup.Item>
+                <ListGroup.Item>Mayor - Jason Chaulk</ListGroup.Item>
+                <ListGroup.Item>Deputy Mayor - Bobby Pinsent</ListGroup.Item>
+                <ListGroup.Item>Councillor - Grant Abbott</ListGroup.Item>
+                <ListGroup.Item>Councillor - Kelly Croucher</ListGroup.Item>
+                <ListGroup.Item>Councillor - Keith Guy</ListGroup.Item>
+                <ListGroup.Item>Councillor - Vic Guy</ListGroup.Item>
+                <ListGroup.Item>Councillor - Claudine Mouland</ListGroup.Item>
+
                 {/* Add more council members */}
               </ListGroup>
             </Card.Body>
@@ -38,7 +45,22 @@ const Town = () => {
             <Card.Body>
               <Card.Title>Town Staff</Card.Title>
               <ListGroup variant="flush">
-                <ListGroup.Item>Staff Member 1 - Position</ListGroup.Item>
+                <ListGroup.Item>Amber Littlejohn - Town Clerk</ListGroup.Item>
+                <ListGroup.Item>
+                  Amanda Frost - Assistant Town Clerk
+                </ListGroup.Item>
+                <ListGroup.Item>Ryan Fahey - Full-Time Operator</ListGroup.Item>
+                <ListGroup.Item>
+                  Dillan Hunt - Full-Time Operator
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  Quinton Pardy - Call-In Operator
+                </ListGroup.Item>
+                <ListGroup.Item>
+                  Cathy Chaulk - Park Corridinator
+                </ListGroup.Item>
+                <ListGroup.Item>Jenny Pinsent - Janitor</ListGroup.Item>
+
                 {/* Add more staff members */}
               </ListGroup>
             </Card.Body>
@@ -84,7 +106,7 @@ const Town = () => {
       <Row>
         <Col md={6}>
           <h3>Hours of Operation</h3>
-          <p>Monday - Friday: 9 AM - 5 PM</p>
+          <p>Monday - Friday: 8 AM - 4 PM</p>
           {/* Add additional hours */}
         </Col>
         <Col md={6}>

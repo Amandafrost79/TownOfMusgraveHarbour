@@ -54,8 +54,8 @@ const Header = () => {
         <Navbar.Brand as={Link} to="/TownOfMusgraveHarbour">
           <img
             src={logo}
-            width="120"
-            height="120"
+            width="150"
+            height="150"
             className="d-inline-block align-top"
             alt="Municipality Logo"
           />{" "}
