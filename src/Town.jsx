@@ -27,13 +27,13 @@ const Town = () => {
             <Card.Body>
               <Card.Title>Town Council</Card.Title>
               <ListGroup variant="flush">
-                <ListGroup.Item>Mayor - Jason Chaulk</ListGroup.Item>
-                <ListGroup.Item>Deputy Mayor - Bobby Pinsent</ListGroup.Item>
-                <ListGroup.Item>Councillor - Grant Abbott</ListGroup.Item>
-                <ListGroup.Item>Councillor - Kelly Croucher</ListGroup.Item>
-                <ListGroup.Item>Councillor - Keith Guy</ListGroup.Item>
-                <ListGroup.Item>Councillor - Vic Guy</ListGroup.Item>
-                <ListGroup.Item>Councillor - Claudine Mouland</ListGroup.Item>
+                <ListGroup.Item>Jason Chaulk - Mayor</ListGroup.Item>
+                <ListGroup.Item>Bobby Pinsent - Deputy Mayor</ListGroup.Item>
+                <ListGroup.Item>Grant Abbott - Councillor</ListGroup.Item>
+                <ListGroup.Item>Kelly Croucher - Councillor</ListGroup.Item>
+                <ListGroup.Item>Keith Guy - Councillor</ListGroup.Item>
+                <ListGroup.Item>Vic Guy - Councillor</ListGroup.Item>
+                <ListGroup.Item>Claudine Mouland - Councillor</ListGroup.Item>
 
                 {/* Add more council members */}
               </ListGroup>
@@ -56,9 +56,7 @@ const Town = () => {
                 <ListGroup.Item>
                   Quinton Pardy - Call-In Operator
                 </ListGroup.Item>
-                <ListGroup.Item>
-                  Cathy Chaulk - Park Corridinator
-                </ListGroup.Item>
+                <ListGroup.Item>Cathy Chaulk - Park Coordinator</ListGroup.Item>
                 <ListGroup.Item>Jenny Pinsent - Janitor</ListGroup.Item>
 
                 {/* Add more staff members */}

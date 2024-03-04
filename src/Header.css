@@ -137,6 +137,7 @@ header {
   background-image: linear-gradient(to right, #1c478d, #3a99c8, #9CECFB); 
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); 
   padding: 0.5rem 1rem;
+  max-height: px;
 }
 
 .navbar-brand {
@@ -148,11 +149,13 @@ header {
 }
 
 .navbar-brand img {
+  
   margin-right: 10px; /* Space between logo and brand name */
   transition: transform 0.3s ease-in-out; /* Smooth transform for logo hover */
   height: auto;
   width: auto;
   max-height: 150px;
+  
 }
 
 .navbar-brand:hover,
@@ -183,3 +186,45 @@ header {
   background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); /* Customizes the toggle icon color */
 }
 
+/* Header.css adjustments for small screens */
+@media (max-width: 981px) {
+  .navbar {
+      min-height: 90px;
+      justify-content: center; /* Center the items in the navbar */
+  }
+
+  .navbar-brand {
+      position: absolute; /* Absolute positioning to help centering */
+      left: 50%; /* Center relative to the navbar */
+      transform: translateX(-50%); /* Offset by half of its width */
+      display: flex;
+      align-items: center; /* Align items (logo image) vertically */
+      top: 0px;
+  }
+
+  .navbar-brand img {
+      max-height: 80px; /* Adjust the logo size for smaller screens */
+  }
+
+  .navbar-toggler {
+      border-color: rgba(255, 255, 255, 0.5);
+      position: absolute;
+      right: 1rem; /* Position the toggler to the right */
+      top: 30px;
+  }
+
+  /* Ensure nav-links are centered when navbar is expanded */
+  .navbar-collapse {
+      flex-basis: 100%; /* Take full width to utilize centering */
+      justify-content: center;
+  }
+
+  .navbar-nav {
+      justify-content: center;
+      width: 100%; /* Ensures nav items are centered in collapse */
+  }
+
+  .nav-item {
+      margin: 0 5px; /* Optional: Adjust spacing between nav items */
+  }
+}
