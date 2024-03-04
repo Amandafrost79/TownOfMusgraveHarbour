@@ -64,7 +64,9 @@
 } */
 
 .footer {
-    background-color: #3a99c8; /* Solid color from your header's gradient */
+    background-image: linear-gradient(to right, #9cecfb, #3a99c8, #1c478d);
+    /* background-image: linear-gradient(to right, #1c478d, #3a99c8, #9cecfb);
+    background-color: #3a99c8; Solid color from your header's gradient */
     color: white; /* Ensures high contrast for readability */
     padding: 5px 0; /* Minimally reduces padding to decrease height */
     font-size: 0.75rem; /* Decreases font size for compactness */

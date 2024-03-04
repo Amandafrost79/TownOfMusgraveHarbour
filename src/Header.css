@@ -164,9 +164,9 @@ header {
 }
 
 .nav-link {
-  color: black !important; /* White text for links */
+  color: black !important; 
   font-weight: 500;
-  transition: color 0.2s ease-in-out; /* Smooth color transition for hover */
+  transition: color 0.2s ease-in-out; 
   padding: 0 0.5rem;
 }
 
@@ -177,22 +177,6 @@ header {
   transform: translateY(-2px); 
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
-
- /* .navbar-toggler {
-  border: none;
-  outline: none;
-  border-color: rgba(255, 255, 255, 0.5); 
-} */
-
-/* .navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); 
-  
-  
-}  */
-
-
-
-
 
 /* Header.css adjustments for small screens */
 @media (max-width: 981px) {
@@ -222,18 +206,23 @@ header {
   }
 
   /* Ensure nav-links are centered when navbar is expanded */
-  .navbar-collapse {
-      flex-basis: 100%; /* Take full width to utilize centering */
+  /* .navbar-collapse {
+      flex-basis: 100%; 
       justify-content: center;
-  }
+  } */
 
-  .navbar-nav {
+  /* .navbar-nav {
       justify-content: center;
-      width: 100%; /* Ensures nav items are centered in collapse */
-  }
+      width: 100%; 
+  } */
 
-  .nav-item {
-      margin: 0 5px; /* Optional: Adjust spacing between nav items */
+  /* .nav-item {
+      margin: 0 5px; 
+  } */
+  .nav-link {
+    margin-left: 10px;
+    padding: 0;
+    color: #ffffff;
   }
   .nav-link:hover,
   .nav-link:focus {
