@@ -178,18 +178,26 @@ header {
   box-shadow: 0 4px 6px rgba(0,0,0,0.1); 
 }
 
-.navbar-toggler {
+ /* .navbar-toggler {
+  border: none;
+  outline: none;
   border-color: rgba(255, 255, 255, 0.5); 
-}
+} */
 
-.navbar-toggler-icon {
-  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); /* Customizes the toggle icon color */
-}
+/* .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'><path stroke='rgba(255, 255, 255, 0.75)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/></svg>"); 
+  
+  
+}  */
+
+
+
+
 
 /* Header.css adjustments for small screens */
 @media (max-width: 981px) {
   .navbar {
-      min-height: 90px;
+      min-height: 130px;
       justify-content: center; /* Center the items in the navbar */
   }
 
@@ -203,14 +211,14 @@ header {
   }
 
   .navbar-brand img {
-      max-height: 80px; /* Adjust the logo size for smaller screens */
+      max-height: 120px; /* Adjust the logo size for smaller screens */
   }
 
   .navbar-toggler {
       border-color: rgba(255, 255, 255, 0.5);
       position: absolute;
       right: 1rem; /* Position the toggler to the right */
-      top: 30px;
+      top: 50px;
   }
 
   /* Ensure nav-links are centered when navbar is expanded */
@@ -226,5 +234,9 @@ header {
 
   .nav-item {
       margin: 0 5px; /* Optional: Adjust spacing between nav items */
+  }
+  .nav-link:hover,
+  .nav-link:focus {
+    box-shadow: none;
   }
 }
