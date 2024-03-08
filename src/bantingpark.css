@@ -137,3 +137,50 @@ body {
     }
   } 
      
+  .card-img-top.fit-img {
+    height: 350px; /* Example height; adjust as needed */
+    object-fit: cover; /* This will cover the area without stretching the image */
+  }
+  
+  .jumbotron {
+    background-image: url('PathToYourImage/beach.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white; /* Ensuring text is white for better contrast */
+  }
+  
+  .jumbotron h1, .jumbotron p {
+    text-shadow: 2px 2px 4px #000; /* Adjust as necessary */
+  }
+  
+  .jumbotron .overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    /* background-color: rgba(0, 0, 0, 0.5); Black overlay with 50% opacity */
+    z-index: 1;
+  }
+  
+  .jumbotron .container {
+    position: relative;
+    z-index: 2; /* Ensures text appears above the overlay */
+  }
+  
+  .jumbotron {
+    padding: 2rem 1rem; /* Adjust the padding as needed */
+  }
+  
+  .jumbotron h1 {
+    font-size: 2.5rem; /* Adjust based on your design */
+  }
+  
+  .jumbotron p {
+    font-size: 1.25rem; /* Adjust based on your design */
+  }
+  
+  .lead  {
+    color: white;
+  }
