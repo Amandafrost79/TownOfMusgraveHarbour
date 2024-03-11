@@ -180,13 +180,16 @@ import {
   Accordion,
   ListGroup,
 } from "react-bootstrap";
+import "./community.css";
 
 const Community = () => {
   return (
     <Container>
       <Row className="my-5">
         <Col>
-          <h1 className="text-center">Welcome to Our Community</h1>
+          <h1 className="text-center">
+            Welcome to The Town of Musgrave Harbour
+          </h1>
         </Col>
       </Row>
 
@@ -195,7 +198,9 @@ const Community = () => {
         <Col md={6}>
           <h2>Upcoming Events</h2>
           <ListGroup>
-            <ListGroup.Item>Music Festival - June 12</ListGroup.Item>
+            <ListGroup.Item>
+              Muddy Hole Scuff 'n Scoff Festival - August 5 - 11
+            </ListGroup.Item>
             <ListGroup.Item>Art Exhibition - July 19</ListGroup.Item>
             {/* Add more events */}
           </ListGroup>
@@ -236,8 +241,9 @@ const Community = () => {
                 <Card className="mb-2">
                   <Card.Img
                     variant="top"
-                    src="path-to-your-image/fishermans-museum.jpg"
+                    src="TownOfMusgraveHarbour/images/museum.JPG"
                     alt="Fisherman's Museum"
+                    className="fit-image"
                   />
                   <Card.Body>
                     <Card.Text>
@@ -269,7 +275,7 @@ const Community = () => {
               <Accordion.Body>Our town was founded in 1834...</Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
-              <Accordion.Header>Public Library</Accordion.Header>
+              <Accordion.Header>Gill Memorial Academy</Accordion.Header>
               <Accordion.Body>
                 Our library offers a wide range of books...
               </Accordion.Body>
