@@ -296,11 +296,14 @@ const Community = () => {
                 <Card.Img
                   variant="top"
                   src="TownOfMusgraveHarbour/images/D&M.jpeg"
-                  alt="Jane's Cafe"
+                  alt="D&M Services"
                 />
                 <Card.Body>
                   <Card.Title>D&M Services</Card.Title>
-                  <Card.Text>Gas Station & Liquor Store</Card.Text>
+                  <Card.Text>
+                    Gas Station & Liquor Store <br />
+                    709-655-2100
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
@@ -311,12 +314,14 @@ const Community = () => {
               <Card>
                 <Card.Img
                   variant="top"
-                  src="path-to-your-image/bookstore.jpg"
-                  alt="Local Bookstore"
+                  src="TownOfMusgraveHarbour/images/muddyshag.JPG"
+                  alt="muddy shag"
                 />
                 <Card.Body>
-                  <Card.Title>Rocky Ridge Diner</Card.Title>
-                  <Card.Text>Restaurant serving local favorites</Card.Text>
+                  <Card.Title>Muddy Shag Lounge</Card.Title>
+                  <Card.Text>
+                    Local Bar and Pub <br /> 709-655-2100
+                  </Card.Text>
                 </Card.Body>
               </Card>
             </Col>
