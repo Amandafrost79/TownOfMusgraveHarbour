@@ -1,6 +1,0 @@
-.fit-image {
-    width: 100%; /* Make image width responsive to container */
-    height: 500px; /* Adjust height as needed */
-    object-fit: cover; /* Cover the area without losing aspect ratio */
-  }
-  

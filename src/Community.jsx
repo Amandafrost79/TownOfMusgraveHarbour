@@ -243,7 +243,11 @@ const Community = () => {
                     variant="top"
                     src="TownOfMusgraveHarbour/images/museum.JPG"
                     alt="Fisherman's Museum"
-                    className="fit-image"
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "500px",
+                    }}
                   />
                   <Card.Body>
                     <Card.Text>
@@ -320,7 +324,82 @@ const Community = () => {
                 <Card.Body>
                   <Card.Title>Muddy Shag Lounge</Card.Title>
                   <Card.Text>
-                    Local Bar and Pub <br /> 709-655-2100
+                    Local Bar and Pub <br /> 709-655-2300
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/straight.JPG"
+                  alt="Straight Shore"
+                />
+                <Card.Body>
+                  <Card.Title>Straight Shore Lounge</Card.Title>
+                  <Card.Text>
+                    Local Bar and Pub <br /> 709-655-2304
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/rocky.JPG"
+                  alt="Rocky Ridge"
+                />
+                <Card.Body>
+                  <Card.Title>Rocky Ridge Diner</Card.Title>
+                  <Card.Text>
+                    Local Restaurant <br /> 709-655-2120
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/general.JPG"
+                  alt="general store"
+                />
+                <Card.Body>
+                  <Card.Title>The General Store</Card.Title>
+                  <Card.Text>
+                    Local Grocery Store <br /> 709-655-2215
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/rain.jpeg"
+                  alt="rain guard"
+                />
+                <Card.Body>
+                  <Card.Title>Rain Guard</Card.Title>
+                  <Card.Text>
+                    Metal Roofing Systems <br /> 709-693-3963
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/spindrift.jpeg"
+                  alt="muddy shag"
+                />
+                <Card.Body>
+                  <Card.Title>Spindrift Counrty Inn & Cottages</Card.Title>
+                  <Card.Text>
+                    Local Hotel and Restaurant <br /> 709-655-2175
                   </Card.Text>
                 </Card.Body>
               </Card>
