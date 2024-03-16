@@ -237,6 +237,7 @@ const Community = () => {
                   conservation efforts, the museum offers a deep dive into the
                   life of the community's past generations.
                 </p>
+
                 {/* Example image in the accordion body */}
                 <Card className="mb-2">
                   <Card.Img
@@ -251,7 +252,51 @@ const Community = () => {
                   />
                   <Card.Body>
                     <Card.Text>
-                      A glimpse into the Fisherman's Museum exhibits.
+                      <p>
+                        The Fishermen’s Union Trading Company Cash Store is
+                        recognized for its historic, aesthetic and cultural
+                        values.
+                      </p>{" "}
+                      <p>
+                        The Fishermen’s Union Trading Company Cash Store has
+                        historic value due to its age and its origins as a
+                        Fishermen's Protective Union (FPU) store. In 1908
+                        William Coaker formed the first organized protest
+                        movement among Newfoundland fishers, the Fishermen's
+                        Protective Union (FPU). The FPU functioned in part as a
+                        cooperative, attempting to weaken the monopoly of
+                        merchants on purchasing and exporting fish and on
+                        retailing supplies. This included opening stores under
+                        the Fishermen’s Union Trading Company (FUTC). Musgrave
+                        Harbour was a strong site for the FPU movement, with a
+                        local FPU council established in 1909, and the first
+                        FUTC store in Newfoundland opening at Doting Cove in
+                        1911. This store was also referred to as the Union Cash
+                        Store, as part of its original purpose was to have
+                        fishing families deal in cash rather than credit or
+                        barter as with the merchant system.
+                      </p>{" "}
+                      <p>
+                        The Fishermen’s Union Trading Company Cash Store has
+                        aesthetic value as one of the most distinctive buildings
+                        in Musgrave Harbour, and one which evokes a sense of
+                        time and place, set against the seascape. Its vernacular
+                        design, simple rectangular form, low-pitched roof, wood
+                        post foundation, narrow clapboard siding and
+                        cornerboards, and wooden windows and doors are typical
+                        for the time and place in which it was built. These
+                        combine with telltale features like exterior double
+                        doors on both floors and large window openings, and
+                        original interior features like wooden floors and
+                        ceilings, visible posts and beams, and retail shelving,
+                        all of which make the building readily identifiable as
+                        an historic general store.
+                      </p>{" "}
+                      <p>
+                        The Fishermen’s Union Trading Company Cash Store also
+                        has cultural value as it has operated as a museum since
+                        1977.
+                      </p>
                     </Card.Text>
                   </Card.Body>
                 </Card>
@@ -276,12 +321,59 @@ const Community = () => {
             {/* Community History Section */}
             <Accordion.Item eventKey="2">
               <Accordion.Header>Community History</Accordion.Header>
-              <Accordion.Body>Our town was founded in 1834...</Accordion.Body>
+              <Accordion.Body>
+                <p>
+                  Musgrave Harbour, NL, incorporated as a town in 1954,
+                  population 1053 (2011c), 1085 (2006c). First incorporated as
+                  the Rural District Council of Musgrave Harbour and Doting
+                  Cove, the Town of Musgrave Harbour is located on the
+                  northeastern coast of Newfoundland at the mouth of Hamilton
+                  Sound, 100 km east of Gander. First known as Muddy Hole, the
+                  name of the shallow cove on which the community is situated,
+                  its name was changed in 1866 in honour of Sir Anthony
+                  Musgrave, the reigning governor of Newfoundland. Musgrave
+                  Harbour was primarily a fishing community with the in-shore
+                  fishery being the mainstay due to the lack of a good harbour
+                  for use by bigger boats.
+                </p>
+                <Card className="mb-2">
+                  <Card.Img
+                    variant="top"
+                    src="TownOfMusgraveHarbour/images/oldie1.JPG"
+                    alt="Fisherman's Museum"
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "400px",
+                    }}
+                  />
+                  <Card.Body>
+                    <Card.Text></Card.Text>
+                  </Card.Body>
+                </Card>
+              </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="3">
               <Accordion.Header>Gill Memorial Academy</Accordion.Header>
               <Accordion.Body>
                 Our library offers a wide range of books...
+                <Card className="mb-2">
+                  <Card.Img
+                    variant="top"
+                    src="TownOfMusgraveHarbour/images/school.jpg"
+                    alt="Gill Memorial Academy"
+                    style={{
+                      objectFit: "cover",
+                      width: "100%",
+                      height: "400px",
+                    }}
+                  />
+                  <Card.Body>
+                    <Card.Text>
+                      A glimpse into the Fisherman's Museum exhibits.
+                    </Card.Text>
+                  </Card.Body>
+                </Card>
               </Accordion.Body>
             </Accordion.Item>
             {/* Add more sections as needed */}
@@ -348,7 +440,7 @@ const Community = () => {
               <Card>
                 <Card.Img
                   variant="top"
-                  src="TownOfMusgraveHarbour/images/rocky.JPG"
+                  src="TownOfMusgraveHarbour/images/rockyridge.jpg"
                   alt="Rocky Ridge"
                 />
                 <Card.Body>
