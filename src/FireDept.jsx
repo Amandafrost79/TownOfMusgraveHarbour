@@ -35,12 +35,15 @@ const FireDept = () => {
                 className="d-block w-100"
                 src="TownOfMusgraveHarbour/images/FireHall.JPG"
                 alt="First slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
               />
               <Carousel.Caption>
-                <h3>Fire Safety Workshop</h3>
-                <p>
-                  Our team conducting a fire safety workshop for local schools.
-                </p>
+                <h3></h3>
+                <p></p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -48,13 +51,63 @@ const FireDept = () => {
                 className="d-block w-100"
                 src="TownOfMusgraveHarbour/images/FireHall2.JPG"
                 alt="Second slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
               />
               <Carousel.Caption>
-                <h3>Community Outreach Program</h3>
-                <p>
-                  Engaging with the community at the annual health and safety
-                  fair.
-                </p>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/members.JPG"
+                alt="Third slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/training.JPG"
+                alt="Fourth slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/training2.JPG"
+                alt="Fifth slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
               </Carousel.Caption>
             </Carousel.Item>
             {/* Add more Carousel.Item as needed */}
@@ -97,6 +150,7 @@ const FireDept = () => {
               </Button>
             </Tab>
           </Tabs>
+          <br />
 
           {/* Modal for Recruitment Details */}
           <Modal show={showModal} onHide={handleCloseModal}>
