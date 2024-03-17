@@ -28,11 +28,7 @@ const Festival = () => {
           <Carousel>
             {/* Carousel items - Replace with actual images */}
             <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="/path/to/your/image1.jpg"
-                alt="First slide"
-              />
+              <img className="d-block w-100" src="" alt="First slide" />
               <Carousel.Caption>
                 <h3>Live Music on the Beach</h3>
                 <p>

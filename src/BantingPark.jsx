@@ -145,7 +145,7 @@ const BantingPark = () => {
           <div className="col-lg-6 mb-3">
             <div className="card">
               <img
-                src="TownOfMusgraveHarbour/images/BantingPlane.JPG"
+                src="TownOfMusgraveHarbour/images/plane.jpg"
                 className="card-img-top img-fluid fit-img"
                 alt="Rebuilt Model of Banting's Plane"
               />

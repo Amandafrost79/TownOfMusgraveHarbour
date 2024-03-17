@@ -491,7 +491,68 @@ const Community = () => {
                 <Card.Body>
                   <Card.Title>Spindrift Counrty Inn & Cottages</Card.Title>
                   <Card.Text>
-                    Local Hotel and Restaurant <br /> 709-655-2175
+                    Hotel and Restaurant <br /> 709-655-2175
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/bobby.JPG"
+                  alt="Pinsent Brothers"
+                />
+                <Card.Body>
+                  <Card.Title>Pinsent Brothers contracting Ltd.</Card.Title>
+                  <Card.Text>
+                    Local Contracting <br /> 709-424-4860
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/chris.jpeg"
+                  alt="Pinsent cabinets"
+                />
+                <Card.Body>
+                  <Card.Title>Pinsent's Custom Kitchen Cabinets</Card.Title>
+                  <Card.Text>
+                    Local Cabinent Building <br /> 709-631-3065
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/hvac.jpeg"
+                  alt="Hvac"
+                />
+                <Card.Body>
+                  <Card.Title>Triple J HVAC</Card.Title>
+                  <Card.Text>
+                    HVAC Install and Service <br /> 709-534-6112
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/jjj.jpeg"
+                  alt="Divinyley Cut"
+                />
+                <Card.Body>
+                  <Card.Title>Divinyley Cut</Card.Title>
+                  <Card.Text>
+                    Custom Gifts
+                    <br /> 709-534-7427
                   </Card.Text>
                 </Card.Body>
               </Card>
