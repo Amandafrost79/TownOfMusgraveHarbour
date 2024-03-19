@@ -14,50 +14,80 @@ const BantingPark = () => {
   return (
     <div className="container mt-5">
       <h1 className="mb-3">Banting Memorial Municipal Park</h1>
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="path/to/your/image1.jpg"
-            alt="First slide"
-          />
-          <Carousel.Caption>
-            <h3>First slide label</h3>
-            <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="path/to/your/image2.jpg"
-            alt="Second slide"
-          />
-          <Carousel.Caption>
-            <h3>Second slide label</h3>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="path/to/your/image3.jpg"
-            alt="Third slide"
-          />
-          <Carousel.Caption>
-            <h3>Third slide label</h3>
-            <p>
-              Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-            </p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        {/* Add more items as needed */}
-      </Carousel>
 
       <p className="para">
         Welcome to Banting Memorial Municipal Park, a serene getaway in the
         heart of our community.
       </p>
 
+      <Carousel>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="TownOfMusgraveHarbour/images/park1.jpg"
+            alt="First slide"
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "500px",
+            }}
+          />
+          <Carousel.Caption>
+            <h3></h3>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="TownOfMusgraveHarbour/images/park2.jpg"
+            alt="Second slide"
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "500px",
+            }}
+          />
+          <Carousel.Caption>
+            <h3></h3>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="TownOfMusgraveHarbour/images/park3.jpg"
+            alt="Third slide"
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "500px",
+            }}
+          />
+          <Carousel.Caption>
+            <h3></h3>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        <Carousel.Item>
+          <img
+            className="d-block w-100"
+            src="TownOfMusgraveHarbour/images/park4.jpg"
+            alt="Fourth slide"
+            style={{
+              objectFit: "cover",
+              width: "100%",
+              height: "500px",
+            }}
+          />
+          <Carousel.Caption>
+            <h3></h3>
+            <p></p>
+          </Carousel.Caption>
+        </Carousel.Item>
+        {/* Add more items as needed */}
+      </Carousel>
+      <br />
       <div className="row">
         <div className="col-md-8">
           <h2>About the Park</h2>
@@ -110,11 +140,11 @@ const BantingPark = () => {
           </p>
         </div>
       </div>
-
+      {/* 
       <div className="row mt-4">
         <div className="col">
           <h2>Gallery</h2>
-          {/* Implement a gallery component or include images directly */}
+        
           <div className="row">
             <div className="col-md-4 mb-3">
               <img
@@ -139,7 +169,7 @@ const BantingPark = () => {
             </div>
           </div>
         </div>
-      </div>
+      </div> */}
       <section className="my-5">
         <h2 className="mb-3">Banting Interpretation Centre & History</h2>
         <p>

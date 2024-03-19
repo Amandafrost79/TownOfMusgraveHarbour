@@ -15,7 +15,10 @@ const Community = () => {
     <Container>
       <Row className="my-5">
         <Col>
-          <h1 className="text-center">Get To Know Musgrave Harbour</h1>
+          <h1 className="text-center">
+            Get To Know Musgrave Harbour... Our Past and Present
+          </h1>{" "}
+          <br />
           <Carousel>
             <Carousel.Item>
               <img
@@ -45,8 +48,8 @@ const Community = () => {
                 }}
               />
               <Carousel.Caption>
-                <h3>Second slide label</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+                <h3></h3>
+                <p></p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
@@ -61,18 +64,15 @@ const Community = () => {
                 }}
               />
               <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
+                <h3></h3>
+                <p></p>
               </Carousel.Caption>
             </Carousel.Item>
             <Carousel.Item>
               <img
                 className="d-block w-100"
                 src="TownOfMusgraveHarbour/images/town1.jpg"
-                alt="Third slide"
+                alt="Fourth slide"
                 style={{
                   objectFit: "cover",
                   width: "100%",
@@ -80,11 +80,56 @@ const Community = () => {
                 }}
               />
               <Carousel.Caption>
-                <h3>Third slide label</h3>
-                <p>
-                  Praesent commodo cursus magna, vel scelerisque nisl
-                  consectetur.
-                </p>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/bonfire1.png"
+                alt="Fifth slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/fpu.jpeg"
+                alt="Sixth slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/town5.jpg"
+                alt="Seventh slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
               </Carousel.Caption>
             </Carousel.Item>
             {/* Add more items as needed */}
@@ -207,6 +252,16 @@ const Community = () => {
             <Accordion.Item eventKey="1">
               <Accordion.Header>The Breakwater Youth Center</Accordion.Header>
               <Accordion.Body>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/youthcenter.jpeg"
+                  alt="Fisherman's Museum"
+                  style={{
+                    objectFit: "cover",
+                    width: "100%",
+                    height: "500px",
+                  }}
+                />
                 <p>
                   The Breakwater Youth Center is a vibrant hub for the young
                   people in our community. Offering a variety of programs,
@@ -221,20 +276,6 @@ const Community = () => {
             <Accordion.Item eventKey="2">
               <Accordion.Header>Community History</Accordion.Header>
               <Accordion.Body>
-                <p>
-                  Musgrave Harbour, NL, incorporated as a town in 1954,
-                  population 1053 (2011c), 1085 (2006c). First incorporated as
-                  the Rural District Council of Musgrave Harbour and Doting
-                  Cove, the Town of Musgrave Harbour is located on the
-                  northeastern coast of Newfoundland at the mouth of Hamilton
-                  Sound, 100 km east of Gander. First known as Muddy Hole, the
-                  name of the shallow cove on which the community is situated,
-                  its name was changed in 1866 in honour of Sir Anthony
-                  Musgrave, the reigning governor of Newfoundland. Musgrave
-                  Harbour was primarily a fishing community with the in-shore
-                  fishery being the mainstay due to the lack of a good harbour
-                  for use by bigger boats.
-                </p>
                 <Card className="mb-2">
                   <Card.Img
                     variant="top"
@@ -247,7 +288,23 @@ const Community = () => {
                     }}
                   />
                   <Card.Body>
-                    <Card.Text></Card.Text>
+                    <Card.Text>
+                      <p>
+                        Musgrave Harbour, NL, incorporated as a town in 1954,
+                        population 1053 (2011c), 1085 (2006c). First
+                        incorporated as the Rural District Council of Musgrave
+                        Harbour and Doting Cove, the Town of Musgrave Harbour is
+                        located on the northeastern coast of Newfoundland at the
+                        mouth of Hamilton Sound, 100 km east of Gander. First
+                        known as Muddy Hole, the name of the shallow cove on
+                        which the community is situated, its name was changed in
+                        1866 in honour of Sir Anthony Musgrave, the reigning
+                        governor of Newfoundland. Musgrave Harbour was primarily
+                        a fishing community with the in-shore fishery being the
+                        mainstay due to the lack of a good harbour for use by
+                        bigger boats.
+                      </p>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Accordion.Body>
@@ -267,7 +324,14 @@ const Community = () => {
                     }}
                   />
                   <Card.Body>
-                    <Card.Text></Card.Text>
+                    <Card.Text>
+                      <p>
+                        The John B. Wheeler Public Library is located inside
+                        Gill Memorial Academy in center of town. Use main
+                        entrance and take the stairs to your right. Library is
+                        located at the first door on your left at top of stairs.
+                      </p>
+                    </Card.Text>
                   </Card.Body>
                 </Card>
               </Accordion.Body>
@@ -306,13 +370,13 @@ const Community = () => {
               <Card>
                 <Card.Img
                   variant="top"
-                  src="TownOfMusgraveHarbour/images/muddyshag.JPG"
+                  src="TownOfMusgraveHarbour/images/muddyshag.jpg"
                   alt="muddy shag"
                 />
                 <Card.Body>
                   <Card.Title>Muddy Shag Lounge</Card.Title>
                   <Card.Text>
-                    Local Bar and Pub <br /> 709-655-2300
+                    Bar and Pub <br /> 709-655-2300
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -327,7 +391,7 @@ const Community = () => {
                 <Card.Body>
                   <Card.Title>Straight Shore Lounge</Card.Title>
                   <Card.Text>
-                    Local Bar and Pub <br /> 709-655-2304
+                    Bar and Pub <br /> 709-655-2304
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -342,7 +406,7 @@ const Community = () => {
                 <Card.Body>
                   <Card.Title>Rocky Ridge Diner</Card.Title>
                   <Card.Text>
-                    Local Restaurant <br /> 709-655-2120
+                    Restaurant <br /> 709-655-2120
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -357,7 +421,7 @@ const Community = () => {
                 <Card.Body>
                   <Card.Title>The General Store</Card.Title>
                   <Card.Text>
-                    Local Grocery Store <br /> 709-655-2215
+                    Grocery Store <br /> 709-655-2215
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -402,7 +466,7 @@ const Community = () => {
                 <Card.Body>
                   <Card.Title>Pinsent Brothers contracting Ltd.</Card.Title>
                   <Card.Text>
-                    Local Contracting <br /> 709-424-4860
+                    Contractor <br /> 709-424-4860
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -417,7 +481,7 @@ const Community = () => {
                 <Card.Body>
                   <Card.Title>Pinsent's Custom Kitchen Cabinets</Card.Title>
                   <Card.Text>
-                    Local Cabinent Building <br /> 709-631-3065
+                    Cabinent Building <br /> 709-631-3065
                   </Card.Text>
                 </Card.Body>
               </Card>
@@ -449,6 +513,53 @@ const Community = () => {
                   <Card.Text>
                     Custom Gifts
                     <br /> 709-534-7427
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/oldbrook.jpg"
+                  alt="Old Brook"
+                />
+                <Card.Body>
+                  <Card.Title>Old Brook Cottages</Card.Title>
+                  <Card.Text>
+                    Cabin Rentals
+                    <br /> 709-
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/oldsalt.JPG"
+                  alt="Old Saltbox"
+                />
+                <Card.Body>
+                  <Card.Title>The Old Saltbox</Card.Title>
+                  <Card.Text>
+                    Aunt Donna's AirBnB
+                    <br /> 709-
+                  </Card.Text>
+                </Card.Body>
+              </Card>
+            </Col>
+            <Col md={4} className="mb-3">
+              <Card>
+                <Card.Img
+                  variant="top"
+                  src="TownOfMusgraveHarbour/images/.jpeg"
+                  alt=""
+                />
+                <Card.Body>
+                  <Card.Title></Card.Title>
+                  <Card.Text>
+                    <br /> 709-
                   </Card.Text>
                 </Card.Body>
               </Card>

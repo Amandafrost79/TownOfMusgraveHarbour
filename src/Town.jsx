@@ -17,7 +17,8 @@ const Town = () => {
         <Col>
           <h1 className="text-center">
             Welcome to The Town of Musgrave Harbour
-          </h1>
+          </h1>{" "}
+          <br />
           <Carousel>
             <Carousel.Item>
               <img
@@ -71,7 +72,55 @@ const Town = () => {
               <img
                 className="d-block w-100"
                 src="TownOfMusgraveHarbour/images/bwater1.jpg"
-                alt="Third slide"
+                alt="Fourth slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/sunset.jpg"
+                alt=" Fifth slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/rink2.jpg"
+                alt="Sixth slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/office.jpg"
+                alt="Seventh slide"
                 style={{
                   objectFit: "cover",
                   width: "100%",

@@ -110,6 +110,38 @@ const FireDept = () => {
                 <p></p>
               </Carousel.Caption>
             </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/firekids.jpg"
+                alt="Fifth slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
+            <Carousel.Item>
+              <img
+                className="d-block w-100"
+                src="TownOfMusgraveHarbour/images/firetrain.jpg"
+                alt="Fifth slide"
+                style={{
+                  objectFit: "cover",
+                  width: "100%",
+                  height: "500px",
+                }}
+              />
+              <Carousel.Caption>
+                <h3></h3>
+                <p></p>
+              </Carousel.Caption>
+            </Carousel.Item>
             {/* Add more Carousel.Item as needed */}
           </Carousel>
 
