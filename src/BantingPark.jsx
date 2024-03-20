@@ -311,7 +311,26 @@ const BantingPark = () => {
           </div>
         </div>
       </section>
-
+      <div
+        className="jumbotron jumbotron-fluid"
+        style={{
+          backgroundImage: "url(TownOfMusgraveHarbour/images/careypond.jpg)",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          backgroundRepeat: "no-repeat", // Do not repeat the image
+          height: "100%", // You can adjust this as needed
+          minHeight: "400px",
+        }}
+      >
+        <div className="overlay"></div>
+        <div className="container">
+          <h1 className="display-4">Banting Walking Trail</h1>
+          <p className="lead">
+            Explore Nature's Splendor, Step by Step on the Banting Walking
+            Trail.
+          </p>
+        </div>
+      </div>
       {/* Add more sections as needed for park features, events, etc. */}
     </div>
   );
