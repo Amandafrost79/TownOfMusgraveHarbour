@@ -72,7 +72,7 @@ const BantingPark = () => {
         <Carousel.Item>
           <img
             className="d-block w-100"
-            src="TownOfMusgraveHarbour/images/park4.jpg"
+            src="TownOfMusgraveHarbour/images/park6.jpg"
             alt="Fourth slide"
             style={{
               objectFit: "cover",
@@ -140,11 +140,112 @@ const BantingPark = () => {
           </p>
         </div>
       </div>
-      {/* 
-      <div className="row mt-4">
+      <section className="my-5">
+        <h2 className="mb-3">Family Fun For All Ages!</h2>
+        <div className="row">
+          <div className="col-md-4 mb-3">
+            <div className="card">
+              <img
+                src="TownOfMusgraveHarbour/images/park5.jpg"
+                className="card-img-top"
+                alt="Beach"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Beach Days</h5>
+                <p className="card-text">
+                  Enjoy a fun-filled day on our white sandy beach, while soaking
+                  up the hot sun and cooling of in the cool waters of the North
+                  Atlantic Ocean.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-3">
+            <div className="card">
+              <img
+                src="TownOfMusgraveHarbour/images/parkplay.jpg"
+                className="card-img-top"
+                alt="Playground"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Playground</h5>
+                <p className="card-text">
+                  Let your day wind down while listening to the laughter and
+                  schnagiens of the kids playing on the playground
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-3">
+            <div className="card">
+              <img
+                src="TownOfMusgraveHarbour/images/park8.jpg"
+                className="card-img-top"
+                alt="Concession Stand"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Paint Days</h5>
+                <p className="card-text">
+                  Get out and enjoy a relaxing day of painting while visiting
+                  our beautiful park. Giving you a keepsake to cherish forever.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-3">
+            <div className="card">
+              <img
+                src="TownOfMusgraveHarbour/images/park7.jpg"
+                className="card-img-top"
+                alt="Concession Stand"
+              />
+              <div className="card-body">
+                <h5 className="card-title">Canada Day Celebrations</h5>
+                <p className="card-text">
+                  Come celebrate with us this Canada Day and see how Banting
+                  Park throws a celebration you won't soon forget!
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-3">
+            <div className="card">
+              <img
+                src="TownOfMusgraveHarbour/images/.jpg"
+                className="card-img-top"
+                alt="Concession Stand"
+              />
+              <div className="card-body">
+                <h5 className="card-title"></h5>
+                <p className="card-text">
+                  Get out and enjoy a relaxing day of painting while visiting
+                  our beautiful park. Giving you a keepsake to cherish forever.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="col-md-4 mb-3">
+            <div className="card">
+              <img
+                src="TownOfMusgraveHarbour/images/.jpg"
+                className="card-img-top"
+                alt="Concession Stand"
+              />
+              <div className="card-body">
+                <h5 className="card-title"></h5>
+                <p className="card-text">
+                  Get out and enjoy a relaxing day of painting while visiting
+                  our beautiful park. Giving you a keepsake to cherish forever.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      {/* <div className="row mt-4">
         <div className="col">
           <h2>Gallery</h2>
-        
+
           <div className="row">
             <div className="col-md-4 mb-3">
               <img
@@ -156,6 +257,20 @@ const BantingPark = () => {
             <div className="col-md-4 mb-3">
               <img
                 src="TownOfMusgraveHarbour/images/park1.jpg"
+                alt="Description"
+                className="img-fluid"
+              />
+            </div>
+            <div className="col-md-4 mb-3">
+              <img
+                src="TownOfMusgraveHarbour/images/park3.jpg"
+                alt="Description"
+                className="img-fluid"
+              />
+            </div>
+            <div className="col-md-4 mb-3">
+              <img
+                src="TownOfMusgraveHarbour/images/park3.jpg"
                 alt="Description"
                 className="img-fluid"
               />
