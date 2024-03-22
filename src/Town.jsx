@@ -23,7 +23,7 @@ const Town = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="TownOfMusgraveHarbour/images/town4.jpg"
+                src="TownOfMusgraveHarbour/images/town3.jpg"
                 alt="First slide"
                 style={{
                   objectFit: "cover",
@@ -39,7 +39,7 @@ const Town = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="TownOfMusgraveHarbour/images/town3.jpg"
+                src="TownOfMusgraveHarbour/images/town4.jpg"
                 alt="Second slide"
                 style={{
                   objectFit: "cover",
@@ -263,20 +263,158 @@ const Town = () => {
       {/* Tax and Fee Structure */}
       <Row className="my-4">
         <Col>
-          <h2>Tax and Fee Structure</h2>
+          <h2>Tax and Fee Structure 2024</h2>
           <Table striped bordered hover>
             <thead>
               <tr>
-                <th>Service</th>
+                <th>Property Tax Rates</th>
                 <th>Fee</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>Service 1</td>
-                <td>$XX.XX</td>
+                <td>Residential Property Tax</td>
+                <td>9.5 Mills</td>
               </tr>
-              {/* Add more services and fees */}
+              <tr>
+                <td>Minimum Property Tax</td>
+                <td>$450/Year</td>
+              </tr>
+              <tr>
+                <td>Vacant land Property Tax</td>
+                <td>$450/Year</td>
+              </tr>
+              <tr>
+                <td>Commercial Property Tax</td>
+                <td>10 Mils</td>
+              </tr>
+              <tr>
+                <td>Minimum Commercial Property Tax</td>
+                <td>$475/Year</td>
+              </tr>
+            </tbody>
+          </Table>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Residential Water & Sewer Tax Rates</th>
+                <th>Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Residential</td>
+                <td>$516/Year</td>
+              </tr>
+              <tr>
+                <td>Apartments (per unit)</td>
+                <td>$516/Year</td>
+              </tr>
+              <tr>
+                <td>B&B's/AirB&B's (per unit)</td>
+                <td>$516/Year</td>
+              </tr>
+            </tbody>
+          </Table>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Commercial Water & Sewer Tax Rates</th>
+                <th>Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Schools/Government Buildings</td>
+                <td>$4116/Year</td>
+              </tr>
+              <tr>
+                <td>Motels/Seniors Home</td>
+                <td>$1584/Year</td>
+              </tr>
+              <tr>
+                <td>
+                  Lounges/Restaurants/Grocery Stores/Salons/Convience
+                  Stores/Funeral Homes
+                </td>
+                <td>$750/Year</td>
+              </tr>
+            </tbody>
+          </Table>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Water Only</th>
+                <th>Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Residential</td>
+                <td>$396/Year</td>
+              </tr>
+              <tr>
+                <td>Commercial</td>
+                <td>$600/Year</td>
+              </tr>
+              <tr>
+                <td>Fish Plants</td>
+                <td>$1200/Year</td>
+              </tr>
+            </tbody>
+          </Table>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Garbage Collection</th>
+                <th>Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Residential</td>
+                <td>$179/Year</td>
+              </tr>
+              <tr>
+                <td>government Buildings/Seniors Homes</td>
+                <td>$3600/Year</td>
+              </tr>
+            </tbody>
+          </Table>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Business Tax (Based on Assessment Value)</th>
+                <th>Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>
+                  Grocery/Hardware/Pharmacy/Building Supplies and other Retail
+                </td>
+                <td>36 Mills</td>
+              </tr>
+              <tr>
+                <td>Restaurants/Garages/Service Stations</td>
+                <td>30 Mills</td>
+              </tr>
+              <tr>
+                <td>Lounges</td>
+                <td>18 mills</td>
+              </tr>
+              <tr>
+                <td>B&B's/AirB&B's</td>
+                <td>10 Mills</td>
+              </tr>
+              <tr>
+                <td>Senior Citizen Homes</td>
+                <td>5 Mills</td>
+              </tr>
+              <tr>
+                <td>Fish Plants/Funeral Parlour/Motel</td>
+                <td>42 mills</td>
+              </tr>
             </tbody>
           </Table>
         </Col>

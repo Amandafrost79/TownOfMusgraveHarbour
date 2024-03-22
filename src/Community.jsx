@@ -103,7 +103,7 @@ const Community = () => {
             <Carousel.Item>
               <img
                 className="d-block w-100"
-                src="TownOfMusgraveHarbour/images/fpu.jpeg"
+                src="TownOfMusgraveHarbour/images/boat1.jpg"
                 alt="Sixth slide"
                 style={{
                   objectFit: "cover",
