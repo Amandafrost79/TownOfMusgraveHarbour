@@ -415,6 +415,82 @@ const Town = () => {
                 <td>Fish Plants/Funeral Parlour/Motel</td>
                 <td>42 mills</td>
               </tr>
+              <tr>
+                <td>Utilities</td>
+                <td>2.5%</td>
+              </tr>
+              <tr>
+                <td>Minimum Business Tax</td>
+                <td>$425/Year</td>
+              </tr>
+              <tr>
+                <td>Home-Based Business</td>
+                <td>$100/Year</td>
+              </tr>
+            </tbody>
+          </Table>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Fees and Permits</th>
+                <th>Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Contractor Permit</td>
+                <td>$4.00 per $1000 Construction Value... $100 Minimum</td>
+              </tr>
+              <tr>
+                <td>Building Permit Commercial</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>Building Permit Residential</td>
+                <td>$50</td>
+              </tr>
+              <tr>
+                <td>Building Permit Demolition</td>
+                <td>$25</td>
+              </tr>
+              <tr>
+                <td>Vendor's Permit Daily</td>
+                <td>$25</td>
+              </tr>
+              <tr>
+                <td>Vendor's Permit Monthly</td>
+                <td>$75</td>
+              </tr>
+              <tr>
+                <td>Curb Stop Shut Off</td>
+                <td>$50</td>
+              </tr>
+              <tr>
+                <td>Curb Stop Turned On</td>
+                <td>$50</td>
+              </tr>
+            </tbody>
+          </Table>
+          <Table striped bordered hover>
+            <thead>
+              <tr>
+                <th>Other</th>
+                <th>Fee</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Tax Certificate</td>
+                <td>$100</td>
+              </tr>
+              <tr>
+                <td>Photocopies</td>
+                <td>$0.50/Page</td>
+              </tr>
+              <tr>
+                <td>Fax</td>
+                <td>$2</td>
+              </tr>
             </tbody>
           </Table>
         </Col>
