@@ -9,6 +9,7 @@ import {
   Table,
   Carousel,
 } from "react-bootstrap";
+import "./town.css";
 
 const Town = () => {
   return (
@@ -264,11 +265,11 @@ const Town = () => {
       <Row className="my-4">
         <Col>
           <h2>Tax and Fee Structure 2024</h2>
-          <Table striped bordered hover>
+          <Table striped bordered hover className="table-fixed-layout">
             <thead>
               <tr>
                 <th>Property Tax Rates</th>
-                <th>Fee</th>
+                <th className="fee-column">Fee</th>
               </tr>
             </thead>
             <tbody>
@@ -294,11 +295,11 @@ const Town = () => {
               </tr>
             </tbody>
           </Table>
-          <Table striped bordered hover>
+          <Table striped bordered hover className="table-fixed-layout">
             <thead>
               <tr>
                 <th>Residential Water & Sewer Tax Rates</th>
-                <th>Fee</th>
+                <th className="fee-column">Fee</th>
               </tr>
             </thead>
             <tbody>
@@ -316,11 +317,11 @@ const Town = () => {
               </tr>
             </tbody>
           </Table>
-          <Table striped bordered hover>
+          <Table striped bordered hover className="table-fixed-layout">
             <thead>
               <tr>
                 <th>Commercial Water & Sewer Tax Rates</th>
-                <th>Fee</th>
+                <th className="fee-column">Fee</th>
               </tr>
             </thead>
             <tbody>
@@ -341,11 +342,11 @@ const Town = () => {
               </tr>
             </tbody>
           </Table>
-          <Table striped bordered hover>
+          <Table striped bordered hover className="table-fixed-layout">
             <thead>
               <tr>
                 <th>Water Only</th>
-                <th>Fee</th>
+                <th className="fee-column">Fee</th>
               </tr>
             </thead>
             <tbody>
@@ -363,11 +364,11 @@ const Town = () => {
               </tr>
             </tbody>
           </Table>
-          <Table striped bordered hover>
+          <Table striped bordered hover className="table-fixed-layout">
             <thead>
               <tr>
                 <th>Garbage Collection</th>
-                <th>Fee</th>
+                <th className="fee-column">Fee</th>
               </tr>
             </thead>
             <tbody>
@@ -381,18 +382,16 @@ const Town = () => {
               </tr>
             </tbody>
           </Table>
-          <Table striped bordered hover>
+          <Table striped bordered hover className="table-fixed-layout">
             <thead>
               <tr>
                 <th>Business Tax (Based on Assessment Value)</th>
-                <th>Fee</th>
+                <th className="fee-column">Fee</th>
               </tr>
             </thead>
             <tbody>
               <tr>
-                <td>
-                  Grocery/Hardware/Pharmacy/Building Supplies and other Retail
-                </td>
+                <td>Grocery/Hardware/Pharmacy and other Retail</td>
                 <td>36 Mills</td>
               </tr>
               <tr>
@@ -429,17 +428,17 @@ const Town = () => {
               </tr>
             </tbody>
           </Table>
-          <Table striped bordered hover>
+          <Table striped bordered hover className="table-fixed-layout">
             <thead>
               <tr>
                 <th>Fees and Permits</th>
-                <th>Fee</th>
+                <th className="fee-column">Fee</th>
               </tr>
             </thead>
             <tbody>
               <tr>
                 <td>Contractor Permit</td>
-                <td>$4.00 per $1000 Construction Value... $100 Minimum</td>
+                <td>$4.00 per $1000 Construction Value. $100 Minimum</td>
               </tr>
               <tr>
                 <td>Building Permit Commercial</td>
@@ -471,11 +470,11 @@ const Town = () => {
               </tr>
             </tbody>
           </Table>
-          <Table striped bordered hover>
+          <Table striped bordered hover className="table-fixed-layout">
             <thead>
               <tr>
                 <th>Other</th>
-                <th>Fee</th>
+                <th className="fee-column">Fee</th>
               </tr>
             </thead>
             <tbody>

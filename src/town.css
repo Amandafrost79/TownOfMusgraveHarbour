@@ -1,0 +1,17 @@
+
+.fee-column {
+    width: 250px; 
+  }
+  
+
+@media (max-width: 768px) {
+    .fee-column {
+      width: 100px; 
+    }
+  }
+  
+  .table-fixed-layout {
+    table-layout: fixed;
+    width: 100%; 
+  }
+  
