@@ -164,9 +164,7 @@ const Town = () => {
               <Card.Title>Town Staff</Card.Title>
               <ListGroup variant="flush">
                 <ListGroup.Item>Amber Littlejohn - Town Clerk</ListGroup.Item>
-                <ListGroup.Item>
-                  Amanda Frost - Assistant Town Clerk
-                </ListGroup.Item>
+                <ListGroup.Item>Amanda Frost - Finance Officer</ListGroup.Item>
                 <ListGroup.Item>Ryan Fahey - Full-Time Operator</ListGroup.Item>
                 <ListGroup.Item>
                   Dillan Hunt - Full-Time Operator

@@ -6,10 +6,16 @@ import {
   Card,
   Accordion,
   ListGroup,
-  Carousel,
 } from "react-bootstrap";
 import "./bantingpark.css";
+import Carousel from "../components/Carousel";
 
+const imageArray = [
+  { src: "TownOfMusgraveHarbour/images/park1.jpg", alt: "First slide" },
+  { src: "TownOfMusgraveHarbour/images/park2.jpg", alt: "Second slide" },
+  { src: "TownOfMusgraveHarbour/images/park3.jpg", alt: "Third slide" },
+  { src: "TownOfMusgraveHarbour/images/park6.jpg", alt: "Fourth slide" },
+];
 const BantingPark = () => {
   return (
     <div className="container mt-5">
@@ -20,73 +26,8 @@ const BantingPark = () => {
         heart of our community.
       </p>
 
-      <Carousel>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="TownOfMusgraveHarbour/images/park1.jpg"
-            alt="First slide"
-            style={{
-              objectFit: "cover",
-              width: "100%",
-              height: "500px",
-            }}
-          />
-          <Carousel.Caption>
-            <h3></h3>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="TownOfMusgraveHarbour/images/park2.jpg"
-            alt="Second slide"
-            style={{
-              objectFit: "cover",
-              width: "100%",
-              height: "500px",
-            }}
-          />
-          <Carousel.Caption>
-            <h3></h3>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="TownOfMusgraveHarbour/images/park3.jpg"
-            alt="Third slide"
-            style={{
-              objectFit: "cover",
-              width: "100%",
-              height: "500px",
-            }}
-          />
-          <Carousel.Caption>
-            <h3></h3>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        <Carousel.Item>
-          <img
-            className="d-block w-100"
-            src="TownOfMusgraveHarbour/images/park6.jpg"
-            alt="Fourth slide"
-            style={{
-              objectFit: "cover",
-              width: "100%",
-              height: "500px",
-            }}
-          />
-          <Carousel.Caption>
-            <h3></h3>
-            <p></p>
-          </Carousel.Caption>
-        </Carousel.Item>
-        {/* Add more items as needed */}
-      </Carousel>
+      <Carousel imageArray={imageArray} />
+
       <br />
       <div className="row">
         <div className="col-md-8">

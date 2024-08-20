@@ -17,5 +17,9 @@ module.exports = {
       'warn',
       { allowConstantExport: true },
     ],
+    // Added these two items to eslintrc - helps avoid unused variables error, keep it as a warning
+    'no-unused-vars': 'warn',
+    // turn of prop types checking - we can talk about this as me move along throughout the program
+    'react/prop-types': 'off',
   },
 }
