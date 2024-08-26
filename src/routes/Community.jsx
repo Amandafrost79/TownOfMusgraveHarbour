@@ -6,9 +6,19 @@ import {
   Card,
   Accordion,
   ListGroup,
-  Carousel,
 } from "react-bootstrap";
 import "./community.css";
+import Carousel from "../components/Carousel";
+
+const communityImages = [
+  { src: "TownOfMusgraveHarbour/images/bwater6.jpg", alt: "First slide" },
+  { src: "TownOfMusgraveHarbour/images/oldplane.jpeg", alt: "Second slide" },
+  { src: "TownOfMusgraveHarbour/images/gillkids.jpg", alt: "Third slide" },
+  { src: "TownOfMusgraveHarbour/images/town1.jpg", alt: "Fourth slide" },
+  { src: "TownOfMusgraveHarbour/images/bonfire1.png", alt: "Fifth slide" },
+  { src: "TownOfMusgraveHarbour/images/boat1.jpg", alt: "Sixth slide" },
+  { src: "TownOfMusgraveHarbour/images/town5.jpg", alt: "Seventh slide" },
+];
 
 const Community = () => {
   return (
@@ -19,121 +29,7 @@ const Community = () => {
             Get To Know Musgrave Harbour... Our Past and Present
           </h1>{" "}
           <br />
-          <Carousel>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="TownOfMusgraveHarbour/images/bwater6.jpg"
-                alt="First slide"
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "500px",
-                }}
-              />
-              <Carousel.Caption>
-                <h3></h3>
-                <p></p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="TownOfMusgraveHarbour/images/oldplane.jpeg"
-                alt="Second slide"
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "500px",
-                }}
-              />
-              <Carousel.Caption>
-                <h3></h3>
-                <p></p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="TownOfMusgraveHarbour/images/gillkids.jpg"
-                alt="Third slide"
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "500px",
-                }}
-              />
-              <Carousel.Caption>
-                <h3></h3>
-                <p></p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="TownOfMusgraveHarbour/images/town1.jpg"
-                alt="Fourth slide"
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "500px",
-                }}
-              />
-              <Carousel.Caption>
-                <h3></h3>
-                <p></p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="TownOfMusgraveHarbour/images/bonfire1.png"
-                alt="Fifth slide"
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "500px",
-                }}
-              />
-              <Carousel.Caption>
-                <h3></h3>
-                <p></p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="TownOfMusgraveHarbour/images/boat1.jpg"
-                alt="Sixth slide"
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "500px",
-                }}
-              />
-              <Carousel.Caption>
-                <h3></h3>
-                <p></p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            <Carousel.Item>
-              <img
-                className="d-block w-100"
-                src="TownOfMusgraveHarbour/images/town5.jpg"
-                alt="Seventh slide"
-                style={{
-                  objectFit: "cover",
-                  width: "100%",
-                  height: "500px",
-                }}
-              />
-              <Carousel.Caption>
-                <h3></h3>
-                <p></p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            {/* Add more items as needed */}
-          </Carousel>
+          <Carousel imageArray={communityImages} />
         </Col>
       </Row>
 
