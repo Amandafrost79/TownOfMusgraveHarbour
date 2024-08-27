@@ -1,14 +1,8 @@
 import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  Accordion,
-  ListGroup,
-} from "react-bootstrap";
+import { Container, Row, Col, Accordion, ListGroup } from "react-bootstrap";
 import "./bantingpark.css";
 import Carousel from "../components/Carousel";
+import Card from "../components/Card";
 
 const imageArray = [
   { src: "TownOfMusgraveHarbour/images/park1.jpg", alt: "First slide" },
@@ -81,7 +75,39 @@ const BantingPark = () => {
           </p>
         </div>
       </div>
+
       <section className="my-5">
+        <h2 className="mb-3">Family Fun For All Ages!</h2>
+        <div className="row">
+          <Card
+            imgSrc="TownOfMusgraveHarbour/images/park5.jpg"
+            imgAlt="Beach"
+            title="Beach Days"
+            text="Enjoy a fun-filled day on our white sandy beach, while soaking up the hot sun and cooling off in the cool waters of the North Atlantic Ocean."
+          />
+          <Card
+            imgSrc="TownOfMusgraveHarbour/images/parkplay.jpg"
+            imgAlt="Playground"
+            title="Playground"
+            text="Let your day wind down while listening to the laughter and shenanigans of the kids playing on the playground."
+          />
+          <Card
+            imgSrc="TownOfMusgraveHarbour/images/park8.jpg"
+            imgAlt="Painting"
+            title="Paint Days"
+            text="Get out and enjoy a relaxing day of painting while visiting our beautiful park. Giving you a keepsake to cherish forever."
+          />
+          <Card
+            imgSrc="TownOfMusgraveHarbour/images/park7.jpg"
+            imgAlt="Canada Day"
+            title="Canada Day Celebrations"
+            text="Come celebrate with us this Canada Day and see how Banting Park throws a celebration you won't soon forget!"
+          />
+          {/* Add more CardComponents as needed */}
+        </div>
+      </section>
+
+      {/* <section className="my-5">
         <h2 className="mb-3">Family Fun For All Ages!</h2>
         <div className="row">
           <div className="col-md-4 mb-3">
@@ -182,50 +208,8 @@ const BantingPark = () => {
             </div>
           </div>
         </div>
-      </section>
-      {/* <div className="row mt-4">
-        <div className="col">
-          <h2>Gallery</h2>
+      </section> */}
 
-          <div className="row">
-            <div className="col-md-4 mb-3">
-              <img
-                src="TownOfMusgraveHarbour/images/park2.jpg"
-                alt="Description"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-4 mb-3">
-              <img
-                src="TownOfMusgraveHarbour/images/park1.jpg"
-                alt="Description"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-4 mb-3">
-              <img
-                src="TownOfMusgraveHarbour/images/park3.jpg"
-                alt="Description"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-4 mb-3">
-              <img
-                src="TownOfMusgraveHarbour/images/park3.jpg"
-                alt="Description"
-                className="img-fluid"
-              />
-            </div>
-            <div className="col-md-4 mb-3">
-              <img
-                src="TownOfMusgraveHarbour/images/park3.jpg"
-                alt="Description"
-                className="img-fluid"
-              />
-            </div>
-          </div>
-        </div>
-      </div> */}
       <section className="my-5">
         <h2 className="mb-3">Banting Interpretation Centre & History</h2>
         <p>
@@ -393,78 +377,3 @@ const BantingPark = () => {
 };
 
 export default BantingPark;
-
-// import React from "react";
-// import { Container, Row, Col, Card, Button } from "react-bootstrap";
-// import "./bantingpark.css";
-
-// const BantingPark = () => {
-//   return (
-//     <Container className="my-5">
-//       <Row className="mb-4">
-//         <Col>
-//           <h1>Welcome to Banting Park</h1>
-//           <p>
-//             This is a beautiful park located in the heart of our municipality,
-//             offering various attractions for visitors of all ages.
-//           </p>
-//         </Col>
-//       </Row>
-
-//       <Row>
-//         {/* Feature 1 */}
-//         <Col md={4} className="mb-4">
-//           <Card>
-//             <Card.Img
-//               variant="top"
-//               src="/TownOfMusgraveHarbour/images/park1.jpg"
-//             />
-//             <Card.Body>
-//               <Card.Title>Nature Trails</Card.Title>
-//               <Card.Text>
-//                 Explore scenic trails and enjoy the beauty of nature.
-//               </Card.Text>
-//               <Button variant="primary">Learn More</Button>
-//             </Card.Body>
-//           </Card>
-//         </Col>
-
-//         {/* Feature 2 */}
-//         <Col md={4} className="mb-4">
-//           <Card>
-//             <Card.Img
-//               variant="top"
-//               src="/TownOfMusgraveHarbour/images/park2.jpg"
-//             />
-//             <Card.Body>
-//               <Card.Title>Playgrounds</Card.Title>
-//               <Card.Text>
-//                 Fun and safe playgrounds for children of all ages.
-//               </Card.Text>
-//               <Button variant="primary">Learn More</Button>
-//             </Card.Body>
-//           </Card>
-//         </Col>
-
-//         {/* Feature 3 */}
-//         <Col md={4} className="mb-4">
-//           <Card>
-//             <Card.Img
-//               variant="top"
-//               src="/TownOfMusgraveHarbour/images/park4.jpg"
-//             />
-//             <Card.Body>
-//               <Card.Title>Community Events</Card.Title>
-//               <Card.Text>
-//                 Join us for community gatherings, events, and more.
-//               </Card.Text>
-//               <Button variant="primary">Learn More</Button>
-//             </Card.Body>
-//           </Card>
-//         </Col>
-//       </Row>
-//     </Container>
-//   );
-// };
-
-// export default BantingPark;
