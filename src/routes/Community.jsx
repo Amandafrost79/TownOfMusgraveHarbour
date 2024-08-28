@@ -9,6 +9,7 @@ import {
 } from "react-bootstrap";
 import "./community.css";
 import Carousel from "../components/Carousel";
+import DirectoryCard from "../components/DirectoryCard";
 
 const communityImages = [
   { src: "TownOfMusgraveHarbour/images/bwater6.jpg", alt: "First slide" },
@@ -18,6 +19,87 @@ const communityImages = [
   { src: "TownOfMusgraveHarbour/images/bonfire1.png", alt: "Fifth slide" },
   { src: "TownOfMusgraveHarbour/images/boat1.jpg", alt: "Sixth slide" },
   { src: "TownOfMusgraveHarbour/images/town5.jpg", alt: "Seventh slide" },
+];
+
+const businessDirectoryData = [
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/D&M.jpeg",
+    imgAlt: "D&M Services",
+    title: "D&M Services",
+    text: "Gas Station & Liquor Store\n709-655-2100",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/muddyshag.jpg",
+    imgAlt: "Muddy Shag Lounge",
+    title: "Muddy Shag Lounge",
+    text: "Bar and Pub\n709-655-2300",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/straight.JPG",
+    imgAlt: "Straight Shore",
+    title: "Straight Shore Lounge",
+    text: "Bar and Pub\n709-655-2304",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/rockyridge.jpg",
+    imgAlt: "Rocky Ridge",
+    title: "Rocky Ridge Diner",
+    text: "Restaurant\n709-655-2120",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/general.JPG",
+    imgAlt: "General Store",
+    title: "The General Store",
+    text: "Grocery Store\n709-655-2215",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/rain.jpeg",
+    imgAlt: "rain guard",
+    title: "Rain Guard",
+    text: "Metal Roofing Systems\n709-693-3963",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/spindrift.jpeg",
+    imgAlt: "spindrift",
+    title: "Spindrift Counrty Inn & Cottages",
+    text: "Hotel and <Restaurant\n709-655-2175",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/bobby.JPG",
+    imgAlt: "pinsent brothers",
+    title: "Pinsent Brothers Contracting Ltd.",
+    text: "Contractor\n709-424-4860",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/chris.jpeg",
+    imgAlt: "pinsents cabinets",
+    title: "Pinsent's Custom Kitchen Cabinets",
+    text: "Cabinent Building\n709-631-3065",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/hvac.jpeg",
+    imgAlt: "Hvac",
+    title: "Triple J HVAC",
+    text: "HVAC Install and Service\n709-534-6112",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/jjj.jpeg",
+    imgAlt: "divinyley cut",
+    title: "Divinyley Cut",
+    text: "Custom Gifts\n709-534-7427",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/oldbrook.jpg",
+    imgAlt: "old brook cottages",
+    title: "Old Brook Cottages",
+    text: "Cabin Rentals\n709-655-",
+  },
+  {
+    imgSrc: "TownOfMusgraveHarbour/images/oldsalt.JPG",
+    imgAlt: "old saltbox",
+    title: "The Old Saltbox",
+    text: "Aunt Donna's AirBnB\n709-",
+  },
 ];
 
 const Community = () => {
@@ -238,232 +320,24 @@ const Community = () => {
       </Row>
 
       {/* Business Directory Section */}
+
       <Row className="my-4">
         <Col md={12}>
           <h2>Business Directory</h2>
-          <Row>
-            {/* Example business listing with image */}
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/D&M.jpeg"
-                  alt="D&M Services"
-                />
-                <Card.Body>
-                  <Card.Title>D&M Services</Card.Title>
-                  <Card.Text>
-                    Gas Station & Liquor Store <br />
-                    709-655-2100
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            {/* Add more businesses with similar structure */}
 
-            {/* Example for another business */}
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/muddyshag.jpg"
-                  alt="muddy shag"
-                />
-                <Card.Body>
-                  <Card.Title>Muddy Shag Lounge</Card.Title>
-                  <Card.Text>
-                    Bar and Pub <br /> 709-655-2300
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/straight.JPG"
-                  alt="Straight Shore"
-                />
-                <Card.Body>
-                  <Card.Title>Straight Shore Lounge</Card.Title>
-                  <Card.Text>
-                    Bar and Pub <br /> 709-655-2304
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/rockyridge.jpg"
-                  alt="Rocky Ridge"
-                />
-                <Card.Body>
-                  <Card.Title>Rocky Ridge Diner</Card.Title>
-                  <Card.Text>
-                    Restaurant <br /> 709-655-2120
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/general.JPG"
-                  alt="general store"
-                />
-                <Card.Body>
-                  <Card.Title>The General Store</Card.Title>
-                  <Card.Text>
-                    Grocery Store <br /> 709-655-2215
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/rain.jpeg"
-                  alt="rain guard"
-                />
-                <Card.Body>
-                  <Card.Title>Rain Guard</Card.Title>
-                  <Card.Text>
-                    Metal Roofing Systems <br /> 709-693-3963
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/spindrift.jpeg"
-                  alt="muddy shag"
-                />
-                <Card.Body>
-                  <Card.Title>Spindrift Counrty Inn & Cottages</Card.Title>
-                  <Card.Text>
-                    Hotel and Restaurant <br /> 709-655-2175
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/bobby.JPG"
-                  alt="Pinsent Brothers"
-                />
-                <Card.Body>
-                  <Card.Title>Pinsent Brothers contracting Ltd.</Card.Title>
-                  <Card.Text>
-                    Contractor <br /> 709-424-4860
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/chris.jpeg"
-                  alt="Pinsent cabinets"
-                />
-                <Card.Body>
-                  <Card.Title>Pinsent's Custom Kitchen Cabinets</Card.Title>
-                  <Card.Text>
-                    Cabinent Building <br /> 709-631-3065
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/hvac.jpeg"
-                  alt="Hvac"
-                />
-                <Card.Body>
-                  <Card.Title>Triple J HVAC</Card.Title>
-                  <Card.Text>
-                    HVAC Install and Service <br /> 709-534-6112
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/jjj.jpeg"
-                  alt="Divinyley Cut"
-                />
-                <Card.Body>
-                  <Card.Title>Divinyley Cut</Card.Title>
-                  <Card.Text>
-                    Custom Gifts
-                    <br /> 709-534-7427
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/oldbrook.jpg"
-                  alt="Old Brook"
-                />
-                <Card.Body>
-                  <Card.Title>Old Brook Cottages</Card.Title>
-                  <Card.Text>
-                    Cabin Rentals
-                    <br /> 709-
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/oldsalt.JPG"
-                  alt="Old Saltbox"
-                />
-                <Card.Body>
-                  <Card.Title>The Old Saltbox</Card.Title>
-                  <Card.Text>
-                    Aunt Donna's AirBnB
-                    <br /> 709-
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
-            <Col md={4} className="mb-3">
-              <Card>
-                <Card.Img
-                  variant="top"
-                  src="TownOfMusgraveHarbour/images/.jpeg"
-                  alt=""
-                />
-                <Card.Body>
-                  <Card.Title></Card.Title>
-                  <Card.Text>
-                    <br /> 709-
-                  </Card.Text>
-                </Card.Body>
-              </Card>
-            </Col>
+          <Row>
+            {businessDirectoryData.map((business, index) => (
+              <DirectoryCard
+                key={index}
+                imgSrc={business.imgSrc}
+                imgAlt={business.imgAlt}
+                title={business.title}
+                text={business.text}
+              />
+            ))}
           </Row>
         </Col>
       </Row>
-      {/* Additional sections for Recreation, etc. can be added here following the same pattern */}
     </Container>
   );
 };

@@ -103,6 +103,8 @@ const BantingPark = () => {
             title="Canada Day Celebrations"
             text="Come celebrate with us this Canada Day and see how Banting Park throws a celebration you won't soon forget!"
           />
+          <Card imgSrc="" imgAlt="" title="" text="" />
+          <Card imgSrc="" imgAlt="" title="" text="" />
           {/* Add more CardComponents as needed */}
         </div>
       </section>
@@ -278,6 +280,7 @@ const BantingPark = () => {
           </div>
         </div>
       </section>
+
       <div
         className="jumbotron jumbotron-fluid"
         style={{
@@ -298,6 +301,7 @@ const BantingPark = () => {
           </p>
         </div>
       </div>
+
       <section className="my-5">
         <h2 className="mb-3">Musgrave Amusements</h2>
         <div className="row">
