@@ -16,13 +16,13 @@ import "./firedept.css";
 import Carousel from "../components/Carousel";
 
 const fireDeptImgs = [
-  { src: "TownOfMusgraveHarbour/images/FireHall.JPG", alt: "1 image" },
-  { src: "TownOfMusgraveHarbour/images/FireHall2.JPG", alt: "2 image" },
-  { src: "TownOfMusgraveHarbour/images/members.JPG", alt: "3 image" },
-  { src: "TownOfMusgraveHarbour/images/training.JPG", alt: "4 image" },
-  { src: "TownOfMusgraveHarbour/images/training2.JPG", alt: "5 image" },
-  { src: "TownOfMusgraveHarbour/images/firetrain.jpg", alt: "6 image" },
-  { src: "TownOfMusgraveHarbour/images/firekids.jpg", alt: "7 image" },
+  { src: "images/FireHall.JPG", alt: "1 image" },
+  { src: "images/FireHall2.JPG", alt: "2 image" },
+  { src: "images/members.JPG", alt: "3 image" },
+  { src: "images/training.JPG", alt: "4 image" },
+  { src: "images/training2.JPG", alt: "5 image" },
+  { src: "images/firetrain.jpg", alt: "6 image" },
+  { src: "images/firekids.jpg", alt: "7 image" },
 ];
 
 const FireDept = () => {

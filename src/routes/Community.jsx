@@ -12,90 +12,90 @@ import Carousel from "../components/Carousel";
 import DirectoryCard from "../components/DirectoryCard";
 
 const communityImages = [
-  { src: "TownOfMusgraveHarbour/images/bwater6.jpg", alt: "First slide" },
-  { src: "TownOfMusgraveHarbour/images/oldplane.jpeg", alt: "Second slide" },
-  { src: "TownOfMusgraveHarbour/images/gillkids.jpg", alt: "Third slide" },
-  { src: "TownOfMusgraveHarbour/images/town1.jpg", alt: "Fourth slide" },
-  { src: "TownOfMusgraveHarbour/images/bonfire1.png", alt: "Fifth slide" },
-  { src: "TownOfMusgraveHarbour/images/boat1.jpg", alt: "Sixth slide" },
-  { src: "TownOfMusgraveHarbour/images/town5.jpg", alt: "Seventh slide" },
+  { src: "images/bwater6.jpg", alt: "First slide" },
+  { src: "images/oldplane.jpeg", alt: "Second slide" },
+  { src: "images/gillkids.jpg", alt: "Third slide" },
+  { src: "images/town1.jpg", alt: "Fourth slide" },
+  { src: "images/bonfire1.png", alt: "Fifth slide" },
+  { src: "images/boat1.jpg", alt: "Sixth slide" },
+  { src: "images/town5.jpg", alt: "Seventh slide" },
 ];
 
 const businessDirectoryData = [
   {
-    imgSrc: "TownOfMusgraveHarbour/images/D&M.jpeg",
+    imgSrc: "images/D&M.jpeg",
     imgAlt: "D&M Services",
     title: "D&M Services",
     text: "Gas Station & Liquor Store\n709-655-2100",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/muddyshag.jpg",
+    imgSrc: "images/muddyshag.jpg",
     imgAlt: "Muddy Shag Lounge",
     title: "Muddy Shag Lounge",
     text: "Bar and Pub\n709-655-2300",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/straight.JPG",
+    imgSrc: "images/straight.JPG",
     imgAlt: "Straight Shore",
     title: "Straight Shore Lounge",
     text: "Bar and Pub\n709-655-2304",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/rockyridge.jpg",
+    imgSrc: "images/rockyridge.jpg",
     imgAlt: "Rocky Ridge",
     title: "Rocky Ridge Diner",
     text: "Restaurant\n709-655-2120",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/general.JPG",
+    imgSrc: "images/general.JPG",
     imgAlt: "General Store",
     title: "The General Store",
     text: "Grocery Store\n709-655-2215",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/rain.jpeg",
+    imgSrc: "images/rain.jpeg",
     imgAlt: "rain guard",
     title: "Rain Guard",
     text: "Metal Roofing Systems\n709-693-3963",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/spindrift.jpeg",
+    imgSrc: "images/spindrift.jpeg",
     imgAlt: "spindrift",
     title: "Spindrift Counrty Inn & Cottages",
     text: "Hotel and <Restaurant\n709-655-2175",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/bobby.JPG",
+    imgSrc: "images/bobby.JPG",
     imgAlt: "pinsent brothers",
     title: "Pinsent Brothers Contracting Ltd.",
     text: "Contractor\n709-424-4860",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/chris.jpeg",
+    imgSrc: "images/chris.jpeg",
     imgAlt: "pinsents cabinets",
     title: "Pinsent's Custom Kitchen Cabinets",
     text: "Cabinent Building\n709-631-3065",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/hvac.jpeg",
+    imgSrc: "images/hvac.jpeg",
     imgAlt: "Hvac",
     title: "Triple J HVAC",
     text: "HVAC Install and Service\n709-534-6112",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/jjj.jpeg",
+    imgSrc: "images/jjj.jpeg",
     imgAlt: "divinyley cut",
     title: "Divinyley Cut",
     text: "Custom Gifts\n709-534-7427",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/oldbrook.jpg",
+    imgSrc: "images/oldbrook.jpg",
     imgAlt: "old brook cottages",
     title: "Old Brook Cottages",
     text: "Cabin Rentals\n709-655-",
   },
   {
-    imgSrc: "TownOfMusgraveHarbour/images/oldsalt.JPG",
+    imgSrc: "images/oldsalt.JPG",
     imgAlt: "old saltbox",
     title: "The Old Saltbox",
     text: "Aunt Donna's AirBnB\n709-",
@@ -164,7 +164,7 @@ const Community = () => {
                 <Card className="mb-2">
                   <Card.Img
                     variant="top"
-                    src="TownOfMusgraveHarbour/images/museum.JPG"
+                    src="images/museum.JPG"
                     alt="Fisherman's Museum"
                     style={{
                       objectFit: "cover",
@@ -232,7 +232,7 @@ const Community = () => {
               <Accordion.Body>
                 <Card.Img
                   variant="top"
-                  src="TownOfMusgraveHarbour/images/youthcenter.jpeg"
+                  src="images/youthcenter.jpeg"
                   alt="Fisherman's Museum"
                   style={{
                     objectFit: "cover",
@@ -257,7 +257,7 @@ const Community = () => {
                 <Card className="mb-2">
                   <Card.Img
                     variant="top"
-                    src="TownOfMusgraveHarbour/images/oldie1.JPG"
+                    src="images/oldie1.JPG"
                     alt="Fisherman's Museum"
                     style={{
                       objectFit: "cover",
@@ -293,7 +293,7 @@ const Community = () => {
                 <Card className="mb-2">
                   <Card.Img
                     variant="top"
-                    src="TownOfMusgraveHarbour/images/school.jpg"
+                    src="images/school.jpg"
                     alt="Gill Memorial Academy"
                     style={{
                       objectFit: "cover",
@@ -322,21 +322,16 @@ const Community = () => {
       {/* Business Directory Section */}
 
       <Row className="my-4">
-        <Col md={12}>
-          <h2>Business Directory</h2>
-
-          <Row>
-            {businessDirectoryData.map((business, index) => (
-              <DirectoryCard
-                key={index}
-                imgSrc={business.imgSrc}
-                imgAlt={business.imgAlt}
-                title={business.title}
-                text={business.text}
-              />
-            ))}
-          </Row>
-        </Col>
+        <h2>Business Directory</h2>
+        {businessDirectoryData.map((business, index) => (
+          <DirectoryCard
+            key={index}
+            imgSrc={business.imgSrc}
+            imgAlt={business.imgAlt}
+            title={business.title}
+            text={business.text}
+          />
+        ))}
       </Row>
     </Container>
   );

@@ -5,10 +5,10 @@ import Carousel from "../components/Carousel";
 import Card from "../components/Card";
 
 const imageArray = [
-  { src: "TownOfMusgraveHarbour/images/park1.jpg", alt: "First slide" },
-  { src: "TownOfMusgraveHarbour/images/park2.jpg", alt: "Second slide" },
-  { src: "TownOfMusgraveHarbour/images/park3.jpg", alt: "Third slide" },
-  { src: "TownOfMusgraveHarbour/images/park6.jpg", alt: "Fourth slide" },
+  { src: "images/park1.jpg", alt: "First slide" },
+  { src: "images/park2.jpg", alt: "Second slide" },
+  { src: "images/park3.jpg", alt: "Third slide" },
+  { src: "images/park6.jpg", alt: "Fourth slide" },
 ];
 const BantingPark = () => {
   return (
@@ -80,25 +80,25 @@ const BantingPark = () => {
         <h2 className="mb-3">Family Fun For All Ages!</h2>
         <div className="row">
           <Card
-            imgSrc="TownOfMusgraveHarbour/images/park5.jpg"
+            imgSrc="images/park5.jpg"
             imgAlt="Beach"
             title="Beach Days"
             text="Enjoy a fun-filled day on our white sandy beach, while soaking up the hot sun and cooling off in the cool waters of the North Atlantic Ocean."
           />
           <Card
-            imgSrc="TownOfMusgraveHarbour/images/parkplay.jpg"
+            imgSrc="images/parkplay.jpg"
             imgAlt="Playground"
             title="Playground"
             text="Let your day wind down while listening to the laughter and shenanigans of the kids playing on the playground."
           />
           <Card
-            imgSrc="TownOfMusgraveHarbour/images/park8.jpg"
+            imgSrc="images/park8.jpg"
             imgAlt="Painting"
             title="Paint Days"
             text="Get out and enjoy a relaxing day of painting while visiting our beautiful park. Giving you a keepsake to cherish forever."
           />
           <Card
-            imgSrc="TownOfMusgraveHarbour/images/park7.jpg"
+            imgSrc="images/park7.jpg"
             imgAlt="Canada Day"
             title="Canada Day Celebrations"
             text="Come celebrate with us this Canada Day and see how Banting Park throws a celebration you won't soon forget!"
@@ -248,7 +248,7 @@ const BantingPark = () => {
           <div className="col-lg-6 mb-3">
             <div className="card">
               <img
-                src="TownOfMusgraveHarbour/images/bantingInt.JPG"
+                src="images/bantingInt.JPG"
                 className="card-img-top img-fluid fit-img"
                 alt="Banting Interpretation Centre"
               />
@@ -265,7 +265,7 @@ const BantingPark = () => {
           <div className="col-lg-6 mb-3">
             <div className="card">
               <img
-                src="TownOfMusgraveHarbour/images/plane.jpg"
+                src="images/plane.jpg"
                 className="card-img-top img-fluid fit-img"
                 alt="Rebuilt Model of Banting's Plane"
               />
@@ -284,7 +284,7 @@ const BantingPark = () => {
       <div
         className="jumbotron jumbotron-fluid"
         style={{
-          backgroundImage: "url(TownOfMusgraveHarbour/images/beach.JPG)",
+          backgroundImage: "url(images/beach.JPG)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat", // Do not repeat the image
@@ -358,7 +358,7 @@ const BantingPark = () => {
       <div
         className="jumbotron jumbotron-fluid"
         style={{
-          backgroundImage: "url(TownOfMusgraveHarbour/images/careypond.jpg)",
+          backgroundImage: "url(images/careypond.jpg)",
           backgroundSize: "cover",
           backgroundPosition: "center",
           backgroundRepeat: "no-repeat", // Do not repeat the image

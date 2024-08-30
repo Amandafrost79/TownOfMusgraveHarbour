@@ -13,7 +13,7 @@ import "./App.css";
 
 function App() {
   return (
-    <Router>
+    <Router basename="/TownOfMusgraveHarbour">
       <div className="App">
         <Header />
         <Routes>

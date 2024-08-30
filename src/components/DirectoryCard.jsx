@@ -6,11 +6,11 @@ const DirectoryCard = ({
   imgAlt,
   title,
   text,
-  columnClass = "col-md-4",
+  columnClass = 4,
   marginBottom = "mb-3",
 }) => {
   return (
-    <Col className={`${columnClass} ${marginBottom}`}>
+    <Col md={columnClass} className={` ${marginBottom}`}>
       <Card>
         <Card.Img variant="top" src={imgSrc} alt={imgAlt} />
         <Card.Body>

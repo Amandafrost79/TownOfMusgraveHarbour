@@ -12,13 +12,13 @@ import "./town.css";
 import Carousel from "../components/Carousel";
 
 const townImages = [
-  { src: "TownOfMusgraveHarbour/images/town3.jpg", alt: "First slide" },
-  { src: "TownOfMusgraveHarbour/images/town4.jpg", alt: "Second slide" },
-  { src: "TownOfMusgraveHarbour/images/town2.jpg", alt: "Third slide" },
-  { src: "TownOfMusgraveHarbour/images/bwater1.jpg", alt: "Fourth slide" },
-  { src: "TownOfMusgraveHarbour/images/sunset.jpg", alt: "Fifth slide" },
-  { src: "TownOfMusgraveHarbour/images/rink2.jpg", alt: "Sixth slide" },
-  { src: "TownOfMusgraveHarbour/images/office.jpg", alt: "Seventh slide" },
+  { src: "images/town3.jpg", alt: "First slide" },
+  { src: "images/town4.jpg", alt: "Second slide" },
+  { src: "images/town2.jpg", alt: "Third slide" },
+  { src: "images/bwater1.jpg", alt: "Fourth slide" },
+  { src: "images/sunset.jpg", alt: "Fifth slide" },
+  { src: "images/rink2.jpg", alt: "Sixth slide" },
+  { src: "images/office.jpg", alt: "Seventh slide" },
 ];
 
 const Town = () => {
