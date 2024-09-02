@@ -102,7 +102,6 @@ const BantingPark = () => {
             imgAlt="Canada Day"
             title="Canada Day Celebrations"
             text="Come celebrate with us this Canada Day and see how Banting Park throws a celebration you won't soon forget!"
-            isLarge={false}
           />
           <Cards imgSrc="" imgAlt="" title="" text="" />
           <Cards imgSrc="" imgAlt="" title="" text="" />
@@ -163,42 +162,6 @@ const BantingPark = () => {
             isLarge={true}
           />
         </Row>
-
-        {/* <div className="row">
-          <div className="col-lg-6 mb-3">
-            <div className="card">
-              <img
-                src="images/bantingInt.JPG"
-                className="card-img-top img-fluid fit-img"
-                alt="Banting Interpretation Centre"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Banting Interpretation Centre</h5>
-                <p className="card-text">
-                  Discover the legacy of Sir Frederick Banting, his
-                  contributions to medicine, and his connection to our
-                  community.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-lg-6 mb-3">
-            <div className="card">
-              <img
-                src="images/plane.jpg"
-                className="card-img-top img-fluid fit-img"
-                alt="Rebuilt Model of Banting's Plane"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Historical Exhibit</h5>
-                <p className="card-text">
-                  Explore the exhibit featuring the rebuilt model of Sir
-                  Frederick Banting's plane and learn about the fateful event.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div> */}
       </section>
 
       <div
@@ -225,56 +188,30 @@ const BantingPark = () => {
       <section className="my-5">
         <h2 className="mb-3">Musgrave Amusements</h2>
         <div className="row">
-          <div className="col-md-4 mb-3">
-            <div className="card">
-              <img
-                src="PathToYourImage/miniGolf.jpg"
-                className="card-img-top"
-                alt="Mini Golf"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Mini Golf</h5>
-                <p className="card-text">
-                  Enjoy a fun-filled round of mini-golf with family and friends
-                  amidst picturesque surroundings.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-3">
-            <div className="card">
-              <img
-                src="PathToYourImage/paddleBoats.jpg"
-                className="card-img-top"
-                alt="Paddle Boats"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Paddle Boat Rentals</h5>
-                <p className="card-text">
-                  Explore the water in a leisurely manner with our paddle boats,
-                  perfect for a relaxing day out.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-3">
-            <div className="card">
-              <img
-                src="PathToYourImage/concessionStand.jpg"
-                className="card-img-top"
-                alt="Concession Stand"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Concession Stand</h5>
-                <p className="card-text">
-                  Treat yourself to delicious snacks and refreshing beverages at
-                  our concession stand.
-                </p>
-              </div>
-            </div>
-          </div>
+          <Cards
+            imgSrc=""
+            imgAlt="Mini Golf"
+            title="Mini Golf"
+            text="Enjoy a fun-filled round of mini-golf with family and friends
+                  amidst picturesque surroundings."
+          />
+          <Cards
+            imgSrc=""
+            imgAlt="Paddle Boats"
+            title="Paddle Boat Rentals"
+            text="Explore the water in a leisurely manner with our paddle boats,
+                  perfect for a relaxing day out."
+          />
+          <Cards
+            imgSrc=""
+            imgAlt="Concession stand"
+            title="Concession Stand"
+            text="Treat yourself to delicious snacks and refreshing beverages at
+                  our concession stand."
+          />
         </div>
       </section>
+
       <div
         className="jumbotron jumbotron-fluid"
         style={{
