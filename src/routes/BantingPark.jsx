@@ -2,7 +2,7 @@ import React from "react";
 import { Container, Row, Col, Accordion, ListGroup } from "react-bootstrap";
 import "./bantingpark.css";
 import Carousel from "../components/Carousel";
-import Card from "../components/Card";
+import Cards from "../components/Cards";
 
 const imageArray = [
   { src: "images/park1.jpg", alt: "First slide" },
@@ -79,138 +79,36 @@ const BantingPark = () => {
       <section className="my-5">
         <h2 className="mb-3">Family Fun For All Ages!</h2>
         <div className="row">
-          <Card
+          <Cards
             imgSrc="images/park5.jpg"
             imgAlt="Beach"
             title="Beach Days"
             text="Enjoy a fun-filled day on our white sandy beach, while soaking up the hot sun and cooling off in the cool waters of the North Atlantic Ocean."
           />
-          <Card
+          <Cards
             imgSrc="images/parkplay.jpg"
             imgAlt="Playground"
             title="Playground"
             text="Let your day wind down while listening to the laughter and shenanigans of the kids playing on the playground."
           />
-          <Card
+          <Cards
             imgSrc="images/park8.jpg"
             imgAlt="Painting"
             title="Paint Days"
             text="Get out and enjoy a relaxing day of painting while visiting our beautiful park. Giving you a keepsake to cherish forever."
           />
-          <Card
+          <Cards
             imgSrc="images/park7.jpg"
             imgAlt="Canada Day"
             title="Canada Day Celebrations"
             text="Come celebrate with us this Canada Day and see how Banting Park throws a celebration you won't soon forget!"
+            isLarge={false}
           />
-          <Card imgSrc="" imgAlt="" title="" text="" />
-          <Card imgSrc="" imgAlt="" title="" text="" />
+          <Cards imgSrc="" imgAlt="" title="" text="" />
+          <Cards imgSrc="" imgAlt="" title="" text="" />
           {/* Add more CardComponents as needed */}
         </div>
       </section>
-
-      {/* <section className="my-5">
-        <h2 className="mb-3">Family Fun For All Ages!</h2>
-        <div className="row">
-          <div className="col-md-4 mb-3">
-            <div className="card">
-              <img
-                src="TownOfMusgraveHarbour/images/park5.jpg"
-                className="card-img-top"
-                alt="Beach"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Beach Days</h5>
-                <p className="card-text">
-                  Enjoy a fun-filled day on our white sandy beach, while soaking
-                  up the hot sun and cooling of in the cool waters of the North
-                  Atlantic Ocean.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-3">
-            <div className="card">
-              <img
-                src="TownOfMusgraveHarbour/images/parkplay.jpg"
-                className="card-img-top"
-                alt="Playground"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Playground</h5>
-                <p className="card-text">
-                  Let your day wind down while listening to the laughter and
-                  schnagiens of the kids playing on the playground
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-3">
-            <div className="card">
-              <img
-                src="TownOfMusgraveHarbour/images/park8.jpg"
-                className="card-img-top"
-                alt="Concession Stand"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Paint Days</h5>
-                <p className="card-text">
-                  Get out and enjoy a relaxing day of painting while visiting
-                  our beautiful park. Giving you a keepsake to cherish forever.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-3">
-            <div className="card">
-              <img
-                src="TownOfMusgraveHarbour/images/park7.jpg"
-                className="card-img-top"
-                alt="Concession Stand"
-              />
-              <div className="card-body">
-                <h5 className="card-title">Canada Day Celebrations</h5>
-                <p className="card-text">
-                  Come celebrate with us this Canada Day and see how Banting
-                  Park throws a celebration you won't soon forget!
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-3">
-            <div className="card">
-              <img
-                src="TownOfMusgraveHarbour/images/.jpg"
-                className="card-img-top"
-                alt="Concession Stand"
-              />
-              <div className="card-body">
-                <h5 className="card-title"></h5>
-                <p className="card-text">
-                  Get out and enjoy a relaxing day of painting while visiting
-                  our beautiful park. Giving you a keepsake to cherish forever.
-                </p>
-              </div>
-            </div>
-          </div>
-          <div className="col-md-4 mb-3">
-            <div className="card">
-              <img
-                src="TownOfMusgraveHarbour/images/.jpg"
-                className="card-img-top"
-                alt="Concession Stand"
-              />
-              <div className="card-body">
-                <h5 className="card-title"></h5>
-                <p className="card-text">
-                  Get out and enjoy a relaxing day of painting while visiting
-                  our beautiful park. Giving you a keepsake to cherish forever.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section> */}
 
       <section className="my-5">
         <h2 className="mb-3">Banting Interpretation Centre & History</h2>
@@ -244,7 +142,29 @@ const BantingPark = () => {
           artifacts pertaining to the crash and also Dr. Sir Frederick Banting's
           work.
         </p>
-        <div className="row">
+
+        <Row>
+          <Cards
+            imgSrc="images/bantingInt.JPG"
+            imgAlt="Banting Interpretation Centre"
+            title="Banting Interpretation Centre"
+            text="Discover the legacy of Sir Frederick Banting, his contributions to medicine, and his connection to our community."
+            columnClass={6} // Makes the card take up half of the row
+            marginBottom="mb-3"
+            isLarge={true}
+          />
+          <Cards
+            imgSrc="images/plane.jpg"
+            imgAlt="Rebuilt Model of Banting's Plane"
+            title="Historical Exhibit"
+            text="Explore the exhibit featuring the rebuilt model of Sir Frederick Banting's plane and learn about the fateful event."
+            columnClass={6} // Makes the card take up half of the row
+            marginBottom="mb-3"
+            isLarge={true}
+          />
+        </Row>
+
+        {/* <div className="row">
           <div className="col-lg-6 mb-3">
             <div className="card">
               <img
@@ -278,7 +198,7 @@ const BantingPark = () => {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
       </section>
 
       <div

@@ -9,7 +9,7 @@ import {
 } from "react-bootstrap";
 import "./community.css";
 import Carousel from "../components/Carousel";
-import DirectoryCard from "../components/DirectoryCard";
+import Cards from "../components/Cards";
 
 const communityImages = [
   { src: "images/bwater6.jpg", alt: "First slide" },
@@ -324,7 +324,7 @@ const Community = () => {
       <Row className="my-4">
         <h2>Business Directory</h2>
         {businessDirectoryData.map((business, index) => (
-          <DirectoryCard
+          <Cards
             key={index}
             imgSrc={business.imgSrc}
             imgAlt={business.imgAlt}
