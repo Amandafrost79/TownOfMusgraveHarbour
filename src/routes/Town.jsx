@@ -10,6 +10,7 @@ import {
 } from "react-bootstrap";
 import "./town.css";
 import Carousel from "../components/Carousel";
+import ListCard from "../components/ListCard";
 
 const townImages = [
   { src: "images/town3.jpg", alt: "First slide" },
@@ -19,6 +20,26 @@ const townImages = [
   { src: "images/sunset.jpg", alt: "Fifth slide" },
   { src: "images/rink2.jpg", alt: "Sixth slide" },
   { src: "images/office.jpg", alt: "Seventh slide" },
+];
+
+const councilMembers = [
+  "Jason Chaulk - Mayor",
+  "Bobby Pinsent - Deputy Mayor",
+  "Grant Abbott - Councillor",
+  "Kelly Croucher - Councillor",
+  "Keith Guy - Councillor",
+  "Vic Guy - Councillor",
+  "Hiliary Hickey - Councillor",
+];
+
+const staffMembers = [
+  "Amber Littlejohn - Town Clerk",
+  "Amanda Frost - Finance Officer",
+  "Ryan Fahey - Full-Time Operator",
+  "Dillan Hunt - Full-Time Operator",
+  "Quinton Pardy - Call-In Operator",
+  "Cathy Chaulk - Park Coordinator",
+  "Jenny Pinsent - Janitor",
 ];
 
 const Town = () => {
@@ -34,48 +55,9 @@ const Town = () => {
         </Col>
       </Row>
 
-      {/* Town Council and Staff Section */}
       <Row>
-        <Col md={6}>
-          <Card>
-            <Card.Body>
-              <Card.Title>Town Council</Card.Title>
-              <ListGroup variant="flush">
-                <ListGroup.Item>Jason Chaulk - Mayor</ListGroup.Item>
-                <ListGroup.Item>Bobby Pinsent - Deputy Mayor</ListGroup.Item>
-                <ListGroup.Item>Grant Abbott - Councillor</ListGroup.Item>
-                <ListGroup.Item>Kelly Croucher - Councillor</ListGroup.Item>
-                <ListGroup.Item>Keith Guy - Councillor</ListGroup.Item>
-                <ListGroup.Item>Vic Guy - Councillor</ListGroup.Item>
-                <ListGroup.Item>Claudine Mouland - Councillor</ListGroup.Item>
-
-                {/* Add more council members */}
-              </ListGroup>
-            </Card.Body>
-          </Card>
-        </Col>
-        <Col md={6}>
-          <Card>
-            <Card.Body>
-              <Card.Title>Town Staff</Card.Title>
-              <ListGroup variant="flush">
-                <ListGroup.Item>Amber Littlejohn - Town Clerk</ListGroup.Item>
-                <ListGroup.Item>Amanda Frost - Finance Officer</ListGroup.Item>
-                <ListGroup.Item>Ryan Fahey - Full-Time Operator</ListGroup.Item>
-                <ListGroup.Item>
-                  Dillan Hunt - Full-Time Operator
-                </ListGroup.Item>
-                <ListGroup.Item>
-                  Quinton Pardy - Call-In Operator
-                </ListGroup.Item>
-                <ListGroup.Item>Cathy Chaulk - Park Coordinator</ListGroup.Item>
-                <ListGroup.Item>Jenny Pinsent - Janitor</ListGroup.Item>
-
-                {/* Add more staff members */}
-              </ListGroup>
-            </Card.Body>
-          </Card>
-        </Col>
+        <ListCard title="Town Council" items={councilMembers} columnClass={6} />
+        <ListCard title="Town Staff" items={staffMembers} columnClass={6} />
       </Row>
 
       {/* Mayor's Message */}
@@ -154,7 +136,6 @@ const Town = () => {
           </Card>
         </Col>
       </Row>
-
       {/* Tax and Fee Structure */}
       <Row className="my-4">
         <Col>
@@ -388,7 +369,6 @@ const Town = () => {
           </Table>
         </Col>
       </Row>
-
       {/* Hours of Operation and Meeting Schedule */}
       <Row>
         <Col md={6}>
@@ -402,7 +382,6 @@ const Town = () => {
           {/* Add more schedules */}
         </Col>
       </Row>
-
       {/* Minutes and More */}
       <Row className="my-4">
         <Col>
