@@ -1,14 +1,17 @@
 import React from "react";
-import {
-  Container,
-  Row,
-  Col,
-  Card,
-  Button,
-  Accordion,
-  Carousel,
-} from "react-bootstrap";
+import { Container, Row, Col, Card, Button, Accordion } from "react-bootstrap";
 import "./festival.css";
+import Carousel from "../components/Carousel";
+
+const festivalImages = [
+  { src: "images/derby2.jpg", alt: "derby" },
+  { src: "images/parade4.jpg", alt: "parade" },
+  { src: "images/parade1.jpg", alt: "parade" },
+  { src: "images/poker3.jpg", alt: "poker run" },
+  { src: "images/sandsculpture.jpg", alt: "sand sculpture" },
+  { src: "", alt: "" },
+  { src: "", alt: "" },
+];
 
 const Festival = () => {
   return (
@@ -24,22 +27,7 @@ const Festival = () => {
       </Row>
 
       <Row className="mb-4">
-        <Col>
-          <Carousel>
-            {/* Carousel items - Replace with actual images */}
-            <Carousel.Item>
-              <img className="d-block w-100" src="" alt="First slide" />
-              <Carousel.Caption>
-                <h3>Live Music on the Beach</h3>
-                <p>
-                  Enjoy breathtaking performances with the backdrop of the
-                  setting sun.
-                </p>
-              </Carousel.Caption>
-            </Carousel.Item>
-            {/* Add more Carousel.Item blocks for other highlights */}
-          </Carousel>
-        </Col>
+        <Carousel imageArray={festivalImages} />
       </Row>
 
       <Row>
