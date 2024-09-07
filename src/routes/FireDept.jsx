@@ -12,8 +12,8 @@ import {
   Alert,
 } from "react-bootstrap";
 import "./firedept.css";
-// import Carousel from "../components/Carousel";
 import Carousel from "../components/Carousel";
+import ListCard from "../components/ListCard";
 
 const fireDeptImgs = [
   { src: "images/FireHall.JPG", alt: "1 image" },
@@ -23,6 +23,37 @@ const fireDeptImgs = [
   { src: "images/training2.JPG", alt: "5 image" },
   { src: "images/firetrain.jpg", alt: "6 image" },
   { src: "images/firekids.jpg", alt: "7 image" },
+];
+
+const fireMembers = [
+  "Grant Pinsent - Fire Chief",
+  "Jason Chaulk - Deputy Fire Chief",
+  "Brent Croucher - Assistant Chief",
+  "Curtis Hicks - Assistant Chief",
+  "Bobby Pinsent - Captain",
+  "Mickey Pinsent - Captain",
+  "Junior Critchley - Captain",
+  "Todd Stokes - Lieutenant/Secretary",
+  "David Guy - Lieutenant",
+  "Ryan Fahey - Lieutenant",
+  "Mitchell Mouland - Lieutenant",
+  "Nadine Hicks - Treasurer",
+  "Hiliary Hickey - Fire Protection Officer",
+  "John Hicks - Firefighter",
+  "Tyler Blackwood - Firefighter",
+  "Derrick Abbott - Firefighter",
+  "Sheldon Mouland - Firefighter",
+  "Wade Mouland - Firefighter",
+  "Keith Mouland - Firefighter",
+  "Jason Mouland - Firefighter",
+  "Joshua Hicks - Firefighter",
+  "Frank Butler - Firefighter",
+  "Danny Abbott - Firefighter",
+  "Trent Abbott - Firefighter",
+  "Elaine Blackwood - Firefighter",
+  "Devon Abbott - Firefighter",
+  "Dillan Hunt - Firefighter",
+  "Jordan Blackwood - Firefighter",
 ];
 
 const FireDept = () => {
@@ -39,7 +70,6 @@ const FireDept = () => {
             Musgrave Harbour Volunteer Fire Department
           </h1>
 
-          {/* Carousel: Highlighting the Department's Activities */}
           <Carousel imageArray={fireDeptImgs} marginBottom="mb-0" />
 
           {/* Tabs: Section for About, Members, Training, and Recruitment */}
@@ -56,11 +86,7 @@ const FireDept = () => {
               </p>
             </Tab>
             <Tab eventKey="members" title="Members">
-              <ListGroup>
-                <ListGroup.Item>John Doe - Fire Chief</ListGroup.Item>
-                <ListGroup.Item>Jane Smith - Deputy Fire Chief</ListGroup.Item>
-                {/* Add more members */}
-              </ListGroup>
+              <ListCard title="Members" items={fireMembers} columnClass={12} />
             </Tab>
             <Tab eventKey="training" title="Training">
               <p>
