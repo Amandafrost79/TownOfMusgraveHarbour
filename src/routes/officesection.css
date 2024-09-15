@@ -1,0 +1,40 @@
+
+.office-section {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.office-section h1 {
+  text-align: center;
+}
+
+.office-section form {
+  margin-top: 20px;
+}
+
+.office-section form div {
+  margin-bottom: 15px;
+}
+
+.office-section form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.office-section form input,
+.office-section form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.office-section form button {
+  padding: 10px 15px;
+  background-color:
+}

@@ -1,6 +1,7 @@
 // export default Footer;
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
+import { Link } from "react-router-dom";
 import "./footer.css";
 
 function Footer() {
@@ -58,6 +59,10 @@ function Footer() {
               <a href="https://street360.net/canada/newfoundland-and-labrador/musgrave-harbour.php">
                 Get Directions and Street View
               </a>
+            </p>
+
+            <p className="discreet-link">
+              <Link to="/login">Office Login</Link>
             </p>
           </Col>
         </Row>

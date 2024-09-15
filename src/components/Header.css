@@ -229,3 +229,25 @@ header {
     box-shadow: none;
   }
 }
+
+/* Style the login link */
+.login-link {
+  font-size: 0.9rem;
+  color: #007bff;
+  font-weight: bold;
+}
+
+/* Optional: Add a separator between the main links and the login link */
+.login-separator {
+  border-left: 1px solid black;
+  height: 30px;
+  margin-left: 20px;
+  margin-right: 10px;
+}
+
+/* Hover effect for the login link */
+.login-link:hover {
+  color: #0056b3;
+  text-decoration: underline;
+}
+
