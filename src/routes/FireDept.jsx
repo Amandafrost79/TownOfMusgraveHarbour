@@ -14,6 +14,7 @@ import {
 import "./firedept.css";
 import Carousel from "../components/Carousel";
 import ListCard from "../components/ListCard";
+import TabsComponent from "../components/TabsComponent";
 
 const fireDeptImgs = [
   { src: "images/FireHall.JPG", alt: "1 image" },
@@ -62,7 +63,84 @@ const FireDept = () => {
   const handleShowModal = () => setShowModal(true);
   const handleCloseModal = () => setShowModal(false);
 
+  const tabsData = [
+    {
+      title: "About",
+      content: (
+        <p>
+          Our volunteer fire department has been serving the community since
+          [year], providing emergency response services and fire prevention
+          education.
+        </p>
+      ),
+    },
+    {
+      title: "Members",
+      content: (
+        <ListCard title="Members" items={fireMembers} columnClass={12} />
+      ),
+    },
+    {
+      title: "Training",
+      content: (
+        <p>
+          Our department offers comprehensive training programs covering
+          firefighting techniques, emergency medical services, and fire
+          prevention.
+        </p>
+      ),
+    },
+    {
+      title: "Recruitment",
+      content: (
+        <div>
+          <p>
+            Interested in joining our team? Click the button below to learn more
+            about the recruitment process and how you can apply.
+          </p>
+          <Button variant="primary" onClick={handleShowModal}>
+            Learn More
+          </Button>
+        </div>
+      ),
+    },
+  ];
+
+  // FireDept.js (inside your component file)
+  const fireSafetyTips = [
+    {
+      title: "Install Smoke Alarms",
+      imgSrc: "images/smokedetect.jpeg",
+      alt: "Smoke Alarm",
+      description:
+        "Install smoke alarms on every level of your home, inside bedrooms, and outside sleeping areas. Test them every month.",
+    },
+    {
+      title: "Plan Your Escape",
+      imgSrc: "images/fireescape.jpg",
+      alt: "Escape Plan",
+      description:
+        "Create a home fire escape plan and practice it at least twice a year with all members of your household.",
+    },
+    {
+      title: "Stay in the Kitchen",
+      imgSrc: "images/kitchenfire.jpeg",
+      alt: "Kitchen Safety",
+      description:
+        "Never leave cooking unattended. If you must leave the kitchen, turn off the stove.",
+    },
+    {
+      title: "Keep Flammables Away",
+      imgSrc: "images/flammables.jpg",
+      alt: "Keep Flammables Away",
+      description:
+        "Keep flammable items, like towels and paper, away from the stove and other heat sources.",
+    },
+  ];
+
   return (
+    // FireDept.js (inside your component return statement)
+
     <Container className="my-5">
       <Row className="justify-content-center">
         <Col lg={10}>
@@ -72,40 +150,12 @@ const FireDept = () => {
 
           <Carousel imageArray={fireDeptImgs} marginBottom="mb-0" />
 
-          {/* Tabs: Section for About, Members, Training, and Recruitment */}
-          <Tabs
-            defaultActiveKey="about"
+          {/* Use the reusable TabsComponent */}
+          <TabsComponent
+            tabs={tabsData}
+            defaultActiveKey="0"
             className="mb-4"
-            id="department-info-tabs"
-          >
-            <Tab eventKey="about" title="About">
-              <p>
-                Our volunteer fire department has been serving the community
-                since [year], providing emergency response services and fire
-                prevention education.
-              </p>
-            </Tab>
-            <Tab eventKey="members" title="Members">
-              <ListCard title="Members" items={fireMembers} columnClass={12} />
-            </Tab>
-            <Tab eventKey="training" title="Training">
-              <p>
-                Our department offers comprehensive training programs covering
-                firefighting techniques, emergency medical services, and fire
-                prevention.
-              </p>
-            </Tab>
-            <Tab eventKey="recruitment" title="Recruitment">
-              <p>
-                Interested in joining our team? Click the button below to learn
-                more about the recruitment process and how you can apply.
-              </p>
-              <Button variant="primary" onClick={handleShowModal}>
-                Learn More
-              </Button>
-            </Tab>
-          </Tabs>
-          <br />
+          />
 
           {/* Modal for Recruitment Details */}
           <Modal show={showModal} onHide={handleCloseModal}>
@@ -129,6 +179,9 @@ const FireDept = () => {
             </Modal.Footer>
           </Modal>
 
+          {/* Fire Safety Section */}
+          <h2 className="mt-4">Fire Safety</h2>
+
           {/* Alert: Fire Safety Tip of the Month */}
           <Alert variant="info" className="mb-4">
             <Alert.Heading>Fire Safety Tip of the Month</Alert.Heading>
@@ -138,7 +191,20 @@ const FireDept = () => {
             </p>
           </Alert>
 
-          {/* Additional sections or elements can be added here */}
+          {/* Display Fire Safety Tips with Images */}
+          <Row className="mt-4">
+            {fireSafetyTips.map((tip, index) => (
+              <Col md={6} lg={4} className="mb-4" key={index}>
+                <Card>
+                  <Card.Img variant="top" src={tip.imgSrc} alt={tip.alt} />
+                  <Card.Body>
+                    <Card.Title>{tip.title}</Card.Title>
+                    <Card.Text>{tip.description}</Card.Text>
+                  </Card.Body>
+                </Card>
+              </Col>
+            ))}
+          </Row>
         </Col>
       </Row>
     </Container>

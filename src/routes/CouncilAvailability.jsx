@@ -71,6 +71,7 @@ const CouncilAvailability = () => {
 
   // Handle selecting a new available date
   const handleDateSelect = (selectInfo) => {
+    console.log("selectinfo ", selectInfo);
     const newDate = {
       title: "Available",
       start: selectInfo.startStr,
@@ -80,23 +81,37 @@ const CouncilAvailability = () => {
       (date) => date.start === newDate.start
     );
 
-    if (!isAlreadySelected) {
-      const updatedAvailability = [...availability, newDate];
-      setAvailability(updatedAvailability);
-
-      // Save the updated availability to local storage
-      localStorage.setItem("availability", JSON.stringify(updatedAvailability));
-    } else {
+    if (isAlreadySelected) {
       alert("This date is already selected.");
+      return;
     }
+    const updatedAvailability = [...availability, newDate];
+    setAvailability(updatedAvailability);
+
+    // setAvailability((prev) => {
+    //   const updated = [...prev, newDate];
+    //   localStorage.setItem("availability", JSON.stringify(availability));
+    //   return updated;
+    // });
+
+    //Save the updated av+ilability to local storage
+    localStorage.setItem("availability", JSON.stringify(updatedAvailability));
   };
 
   // Handle deleting an available date
   const handleDelete = (indexToDelete) => {
-    const updatedAvailability = availability.filter(
-      (_, index) => index !== indexToDelete
+    // const updatedAvailability = availability.filter(
+    //   (_, index) => index !== indexToDelete
+    // );
+    // setAvailability(updatedAvailability);
+
+    // setAvailability((prev) => {
+    //   return prev.filter((_, index) => index !== indexToDelete);
+    // });
+
+    setAvailability((prev) =>
+      prev.filter((_, index) => index !== indexToDelete)
     );
-    setAvailability(updatedAvailability);
 
     // Update local storage after deletion
     localStorage.setItem("availability", JSON.stringify(updatedAvailability));

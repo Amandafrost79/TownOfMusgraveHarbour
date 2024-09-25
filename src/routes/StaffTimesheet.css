@@ -1,7 +1,7 @@
 /* Main container for the timesheet */
 .timesheet-container {
-    max-width: 600px;
-    margin: 0 auto;
+    /* max-width: 600px; */
+    /* margin: 0 auto; */
     padding: 40px;
     background-color: #ffffff;
     border-radius: 12px;
