@@ -1,15 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { useAuth } from "../AuthContext";
-// import "./StaffTimesheet.css"; // Ensure your CSS is imported
-import {
-  Stack,
-  Col,
-  Row,
-  Button,
-  Form,
-  ListGroup,
-  Card,
-} from "react-bootstrap";
+import { Stack, Col, Row, Button, Form, ListGroup } from "react-bootstrap";
 import FullCalendar from "@fullcalendar/react";
 import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
@@ -19,12 +10,12 @@ const StaffTimesheet = () => {
   const [timesheet, setTimesheet] = useState([
     { date: "", hours: "", category: "" },
   ]);
-  const [storedTimesheets, setStoredTimesheets] = useState({});
+  const [storedTimesheets, setStoredTimesheets] = useState([]);
 
   // Load timesheets from local storage on component mount
   useEffect(() => {
     const savedTimesheets =
-      JSON.parse(localStorage.getItem("timesheets")) || {};
+      JSON.parse(localStorage.getItem("timesheets")) || [];
     setStoredTimesheets(savedTimesheets);
   }, []);
 
@@ -42,20 +33,11 @@ const StaffTimesheet = () => {
 
   // Handle form submission
   const handleSubmit = () => {
-    const updatedTimesheets = { ...storedTimesheets };
-
-    timesheet.forEach((entry) => {
-      const { date, category, hours } = entry;
-      if (!updatedTimesheets[date]) {
-        updatedTimesheets[date] = [];
-      }
-      updatedTimesheets[date].push({ category, hours });
-    });
-
-    setStoredTimesheets(updatedTimesheets);
+    const newTimesheets = [...storedTimesheets, ...timesheet];
+    setStoredTimesheets(newTimesheets);
 
     // Save to local storage
-    localStorage.setItem("timesheets", JSON.stringify(updatedTimesheets));
+    localStorage.setItem("timesheets", JSON.stringify(newTimesheets));
 
     // Clear the form after submission
     setTimesheet([{ date: "", hours: "", category: "" }]);
@@ -63,23 +45,13 @@ const StaffTimesheet = () => {
     alert("Timesheet submitted!");
   };
 
-  // Handle deletion of a timesheet entry by date
-  const handleDelete = (dateToDelete, categoryToDelete) => {
-    const updatedTimesheets = { ...storedTimesheets };
-    if (updatedTimesheets[dateToDelete]) {
-      updatedTimesheets[dateToDelete] = updatedTimesheets[dateToDelete].filter(
-        (entry) => entry.category !== categoryToDelete
-      );
-
-      if (updatedTimesheets[dateToDelete].length === 0) {
-        delete updatedTimesheets[dateToDelete];
-      }
-    }
-
+  // Handle deletion of a timesheet entry
+  const handleDelete = (indexToDelete) => {
+    const updatedTimesheets = storedTimesheets.filter(
+      (_, index) => index !== indexToDelete
+    );
     setStoredTimesheets(updatedTimesheets);
-
-    // Update local storage after deletion
-    localStorage.setItem("timesheets", JSON.stringify(updatedTimesheets));
+    localStorage.setItem("timesheets", JSON.stringify(updatedTimesheets)); // Update local storage
   };
 
   // Assign colors based on category
@@ -97,88 +69,16 @@ const StaffTimesheet = () => {
   };
 
   // Convert stored timesheets to FullCalendar event format
-  const calendarEvents = Object.keys(storedTimesheets).map((date) => ({
-    title: `Work Log`,
-    start: date,
-    allDay: true,
-    backgroundColor: "gray", // Same color for date events
+  const calendarEvents = storedTimesheets.map((entry, index) => ({
+    id: index, // A unique identifier for each event
+    title: `${entry.hours} hrs - ${entry.category}`,
+    start: entry.date, // FullCalendar requires date in 'YYYY-MM-DD' format
+    allDay: true, // Display as an all-day event
+    backgroundColor: getCategoryColor(entry.category), // Color based on category
   }));
 
-  // const StaffTimesheet = () => {
-  //   const { user } = useAuth();
-  //   const [timesheet, setTimesheet] = useState([
-  //     { date: "", hours: "", category: "" },
-  //   ]);
-  //   const [storedTimesheets, setStoredTimesheets] = useState([]);
-
-  //   // Load timesheets from local storage on component mount
-  //   useEffect(() => {
-  //     const savedTimesheets =
-  //       JSON.parse(localStorage.getItem("timesheets")) || [];
-  //     setStoredTimesheets(savedTimesheets);
-  //   }, []);
-
-  //   // Handle input changes
-  //   const handleTimesheetChange = (index, field, value) => {
-  //     const updatedTimesheet = [...timesheet];
-  //     updatedTimesheet[index][field] = value;
-  //     setTimesheet(updatedTimesheet);
-  //   };
-
-  //   // Add new row for timesheet entry
-  //   const addTimesheetRow = () => {
-  //     setTimesheet([...timesheet, { date: "", hours: "", category: "" }]);
-  //   };
-
-  //   // Handle form submission
-  //   const handleSubmit = () => {
-  //     const newTimesheets = [...storedTimesheets, ...timesheet];
-
-  //     setStoredTimesheets(newTimesheets);
-
-  //     // Save to local storage
-  //     localStorage.setItem("timesheets", JSON.stringify(newTimesheets));
-
-  //     // Clear the form after submission
-  //     setTimesheet([{ date: "", hours: "", description: "" }]);
-
-  //     alert("Timesheet submitted!");
-  //   };
-
-  //   // Handle deletion of a timesheet entry
-  //   const handleDelete = (indexToDelete) => {
-  //     const updatedTimesheets = storedTimesheets.filter(
-  //       (_, index) => index !== indexToDelete
-  //     );
-  //     setStoredTimesheets(updatedTimesheets);
-  //     localStorage.setItem("timesheets", JSON.stringify(updatedTimesheets)); // Update local storage
-  //   };
-
-  //   // Assign colors based on category
-  //   const getCategoryColor = (category) => {
-  //     switch (category) {
-  //       case "WTP":
-  //         return "blue";
-  //       case "Fleet":
-  //         return "green";
-  //       case "Roads":
-  //         return "red";
-  //       default:
-  //         return "gray";
-  //     }
-  //   };
-
-  //   // Convert stored timesheets to FullCalendar event format
-  //   const calendarEvents = storedTimesheets.map((entry, index) => ({
-  //     id: index, // A unique identifier for each event
-  //     title: `${entry.hours} hrs - ${entry.category}`,
-  //     start: entry.date, // FullCalendar requires date in 'YYYY-MM-DD' format
-  //     allDay: true, // Display as an all-day event
-  //     backgroundColor: getCategoryColor(entry.category),
-  //   }));
-
   return (
-    <Stack gap={2} direction="horizontal">
+    <Stack gap={3} direction="horizontal">
       <Col xs={4}>
         <h2>{user?.username}'s Timesheet</h2>
         {timesheet.map((entry, index) => (
@@ -215,17 +115,6 @@ const StaffTimesheet = () => {
                 <option value="Roads">Roads</option>
               </Form.Select>
             </Col>
-
-            {/* <Col xs={5}>
-              <Form.Control
-                type="text"
-                value={entry.description}
-                placeholder="Work Description"
-                onChange={(e) =>
-                  handleTimesheetChange(index, "description", e.target.value)
-                }
-              />
-            </Col> */}
           </Row>
         ))}
         <Button variant="primary" onClick={addTimesheetRow} className="me-2">
@@ -236,39 +125,12 @@ const StaffTimesheet = () => {
         </Button>
 
         <h3 className="mt-4">Submitted Timesheets</h3>
-        {Object.keys(storedTimesheets).length > 0 ? (
-          <ListGroup>
-            {Object.keys(storedTimesheets).map((date, index) => (
-              <ListGroup.Item key={index}>
-                <strong>Date:</strong> {date}
-                <ul>
-                  {storedTimesheets[date].map((entry, idx) => (
-                    <li key={idx}>
-                      <span>
-                        <strong>Category:</strong> {entry.category},{" "}
-                        <strong>Hours:</strong> {entry.hours}
-                      </span>
-                      <Button
-                        variant="danger"
-                        size="sm"
-                        onClick={() => handleDelete(date, entry.category)}
-                        className="ms-2"
-                      >
-                        Delete
-                      </Button>
-                    </li>
-                  ))}
-                </ul>
-              </ListGroup.Item>
-            ))}
-          </ListGroup>
-        ) : (
-          /* {storedTimesheets.length > 0 ? (
+        {storedTimesheets.length > 0 ? (
           <ListGroup>
             {storedTimesheets.map((entry, index) => (
               <ListGroup.Item
                 key={index}
-                className="d-flex justify-content-between align-items-start"
+                className="d-flex justify-content-between align-items-center"
               >
                 <div>
                   <strong>Date:</strong> {entry.date} <br />
@@ -284,10 +146,9 @@ const StaffTimesheet = () => {
                 </Button>
               </ListGroup.Item>
             ))}
-          </ListGroup> */
-          <Card className="mt-3">
-            <Card.Body>No timesheets submitted yet.</Card.Body>
-          </Card>
+          </ListGroup>
+        ) : (
+          <p>No timesheets submitted yet.</p>
         )}
       </Col>
 
