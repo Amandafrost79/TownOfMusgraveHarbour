@@ -1,4 +1,4 @@
-/* Main container */
+ 
 .council-availability-container {
     max-width: 800px;
     margin: 0 auto;
@@ -6,7 +6,7 @@
     background-color: #f8f9fa;
     border-radius: 12px;
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-    font-family: 'Arial', sans-serif;
+    font-family: 'Arial', sans-serif; 
   }
   
   /* Section title */
@@ -96,17 +96,17 @@
     }
   }
 
-button {
-    margin-left: 10px;
-    padding: 5px 10px;
-    background-color: #dc3545;
-    color: white;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  button:hover {
-    background-color: #c82333;
-  }
+    button {
+        margin-left: 10px;
+        padding: 5px 10px;
+        background-color: #dc3545;
+        color: white;
+        border: none;
+        border-radius: 4px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+    }
+    
+    button:hover {
+        background-color: #c82333;
+    }  */
