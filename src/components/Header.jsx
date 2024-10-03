@@ -60,16 +60,11 @@ const Header = () => {
                 <NavDropdown.Item as={Link} to="/council-availability">
                   Meeting Availability
                 </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/reminders">
+                  Reminders
+                </NavDropdown.Item>
               </NavDropdown>
             )}
-
-            {/* {user ? (
-              <Nav.Link as={Link} to="/">
-                Office Login
-              </Nav.Link>
-            ) : (
-              false
-            )} */}
           </Nav>
         </Navbar.Collapse>
       </Container>

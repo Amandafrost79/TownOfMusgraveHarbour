@@ -14,6 +14,7 @@ import CouncilAvailability from "./routes/CouncilAvailability"; // Add councillo
 import StaffTimesheet from "./routes/StaffTimesheet"; // Add staff timesheet page import
 import { AuthProvider } from "./AuthContext"; // Add AuthProvider import
 import "./App.css";
+import Reminders from "./routes/Reminders";
 
 function App() {
   return (
@@ -35,6 +36,7 @@ function App() {
               element={<CouncilAvailability />}
             />
             <Route path="/staff-timesheet" element={<StaffTimesheet />} />
+            <Route path="/reminders" element={<Reminders />} />
           </Routes>
           <Footer />
         </div>
