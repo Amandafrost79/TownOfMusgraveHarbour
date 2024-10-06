@@ -1,6 +1,5 @@
 import React from "react";
 import { Container, Row, Col, Card, Button, Accordion } from "react-bootstrap";
-import "./festival.css";
 import Carousel from "../components/Carousel";
 
 const festivalImages = [

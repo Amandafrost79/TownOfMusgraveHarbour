@@ -11,7 +11,6 @@ import {
   Button,
   Alert,
 } from "react-bootstrap";
-import "./firedept.css";
 import Carousel from "../components/Carousel";
 import ListCard from "../components/ListCard";
 import TabsComponent from "../components/TabsComponent";

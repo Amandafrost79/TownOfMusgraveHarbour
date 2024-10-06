@@ -7,7 +7,6 @@ import {
   Accordion,
   ListGroup,
 } from "react-bootstrap";
-import "./community.css";
 import Carousel from "../components/Carousel";
 import Cards from "../components/Cards";
 

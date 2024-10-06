@@ -1,26 +1,36 @@
 import React, { useState, useEffect } from "react";
 import { Form, Button, ListGroup, Row, Col, InputGroup } from "react-bootstrap";
+import DatePicker from "react-datepicker";
+import "react-datepicker/dist/react-datepicker.css";
+import { useAuth } from "../AuthContext";
 
 const Reminders = () => {
-  const [reminders, setReminders] = useState([]);
-  const [newReminder, setNewReminder] = useState("");
+  const { user } = useAuth();
+  const [reminders, setReminders] = useState(() => {
+    const savedReminders = localStorage.getItem("reminders");
+    return savedReminders ? JSON.parse(savedReminders) : [];
+  });
 
-  // Load reminders from local storage on component mount
-  useEffect(() => {
-    const savedReminders = JSON.parse(localStorage.getItem("reminders")) || [];
-    setReminders(savedReminders);
-  }, []);
+  const [newReminder, setNewReminder] = useState({
+    title: "",
+    description: "",
+    dueDate: new Date(),
+  });
+  const [filter, setFilter] = useState("All");
 
-  // Save reminders to local storage whenever they change
+  // Save reminders to local storage whenever the reminders state changes
   useEffect(() => {
-    localStorage.setItem("reminders", JSON.stringify(reminders));
+    if (reminders.length > 0) {
+      localStorage.setItem("reminders", JSON.stringify(reminders));
+    }
   }, [reminders]);
 
   // Handle adding a new reminder
   const handleAddReminder = () => {
-    if (newReminder.trim()) {
-      setReminders([...reminders, newReminder]);
-      setNewReminder("");
+    if (newReminder.title.trim()) {
+      const newReminderWithCompletion = { ...newReminder, completed: false };
+      setReminders([...reminders, newReminderWithCompletion]);
+      setNewReminder({ title: "", description: "", dueDate: new Date() });
     }
   };
 
@@ -30,29 +40,104 @@ const Reminders = () => {
     setReminders(updatedReminders);
   };
 
+  // Handle marking a reminder as completed
+  const handleToggleComplete = (index) => {
+    const updatedReminders = reminders.map((reminder, i) =>
+      i === index ? { ...reminder, completed: !reminder.completed } : reminder
+    );
+    setReminders(updatedReminders);
+  };
+
+  // Filter reminders based on status (All, Completed, Pending)
+  const filteredReminders = reminders.filter((reminder) => {
+    if (filter === "Completed") return reminder.completed;
+    if (filter === "Pending") return !reminder.completed;
+    return true;
+  });
+
   return (
     <div className="mt-4">
-      <h2>Reminders</h2>
-      <InputGroup className="mb-3">
-        <Form.Control
-          type="text"
-          placeholder="Add a new reminder"
-          value={newReminder}
-          onChange={(e) => setNewReminder(e.target.value)}
-        />
-        <Button variant="primary" onClick={handleAddReminder}>
-          Add
-        </Button>
-      </InputGroup>
+      <h2>{user?.username}'s Reminders</h2>
 
-      {reminders.length > 0 ? (
+      {/* Reminder Input */}
+      <Row className="mb-3">
+        <Col xs={12}>
+          <InputGroup>
+            <Form.Control
+              type="text"
+              placeholder="Title"
+              value={newReminder.title}
+              onChange={(e) =>
+                setNewReminder({ ...newReminder, title: e.target.value })
+              }
+            />
+          </InputGroup>
+        </Col>
+        <Col xs={12} className="mt-2">
+          <InputGroup>
+            <Form.Control
+              as="textarea"
+              placeholder="Description"
+              value={newReminder.description}
+              onChange={(e) =>
+                setNewReminder({ ...newReminder, description: e.target.value })
+              }
+            />
+          </InputGroup>
+        </Col>
+        <Col xs={12} className="mt-2">
+          <Form.Group>
+            <Form.Label>Due Date</Form.Label>
+            <DatePicker
+              selected={newReminder.dueDate}
+              onChange={(date) =>
+                setNewReminder({ ...newReminder, dueDate: date })
+              }
+              className="form-control"
+            />
+          </Form.Group>
+        </Col>
+        <Col xs={12} className="mt-2">
+          <Button variant="primary" onClick={handleAddReminder}>
+            Add Reminder
+          </Button>
+        </Col>
+      </Row>
+
+      {/* Filter */}
+      <Form.Group className="mb-3">
+        <Form.Label>Filter Reminders</Form.Label>
+        <Form.Select value={filter} onChange={(e) => setFilter(e.target.value)}>
+          <option value="All">All</option>
+          <option value="Completed">Completed</option>
+          <option value="Pending">Pending</option>
+        </Form.Select>
+      </Form.Group>
+
+      {/* Reminders List */}
+      {filteredReminders.length > 0 ? (
         <ListGroup>
-          {reminders.map((reminder, index) => (
+          {filteredReminders.map((reminder, index) => (
             <ListGroup.Item
               key={index}
               className="d-flex justify-content-between align-items-center"
             >
-              <div>{reminder}</div>
+              <div>
+                <Form.Check
+                  type="checkbox"
+                  label={<strong>{reminder.title}</strong>}
+                  checked={reminder.completed}
+                  onChange={() => handleToggleComplete(index)}
+                />
+                <div>
+                  <small>Description: {reminder.description}</small>
+                </div>
+                <div>
+                  <small>
+                    Due Date: {new Date(reminder.dueDate).toLocaleDateString()}
+                  </small>
+                </div>
+              </div>
               <Button
                 variant="danger"
                 size="sm"
@@ -64,7 +149,7 @@ const Reminders = () => {
           ))}
         </ListGroup>
       ) : (
-        <p>No reminders yet. Add a reminder using the input above.</p>
+        <p>No reminders available for the selected filter.</p>
       )}
     </div>
   );

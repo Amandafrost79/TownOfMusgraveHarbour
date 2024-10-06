@@ -8,7 +8,6 @@ import {
   ListGroup,
   Table,
 } from "react-bootstrap";
-import "./town.css";
 import Carousel from "../components/Carousel";
 import ListCard from "../components/ListCard";
 

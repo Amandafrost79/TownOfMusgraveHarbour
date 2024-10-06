@@ -4,7 +4,6 @@ import dayGridPlugin from "@fullcalendar/daygrid";
 import interactionPlugin from "@fullcalendar/interaction";
 import { useAuth } from "../AuthContext";
 import { Container, Row, Col, Button, ListGroup } from "react-bootstrap";
-import "./councilavailability.css"; // Assuming you have some styles
 
 const CouncilAvailability = () => {
   const { user } = useAuth();
