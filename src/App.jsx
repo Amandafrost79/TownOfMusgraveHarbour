@@ -15,6 +15,7 @@ import StaffTimesheet from "./routes/StaffTimesheet"; // Add staff timesheet pag
 import { AuthProvider } from "./AuthContext"; // Add AuthProvider import
 import "./App.css";
 import Reminders from "./routes/Reminders";
+import StaffSchedule from "./routes/StaffSchedule";
 
 function App() {
   return (
@@ -23,7 +24,7 @@ function App() {
         <div className="App">
           <Header />
           <Routes>
-            <Route path="/TownOfMusgraveHarbour" element={<HomePage />} />
+            <Route path="/" element={<HomePage />} />
             <Route path="/town" element={<Town />} />
             <Route path="/community" element={<Community />} />
             <Route path="/banting-park" element={<BantingPark />} />
@@ -37,6 +38,7 @@ function App() {
             />
             <Route path="/staff-timesheet" element={<StaffTimesheet />} />
             <Route path="/reminders" element={<Reminders />} />
+            <Route path="/staff-schedule" element={<StaffSchedule />} />
           </Routes>
           <Footer />
         </div>

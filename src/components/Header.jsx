@@ -1,7 +1,7 @@
 // export default Header;
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import { Navbar, Nav, Container, NavDropdown } from "react-bootstrap";
+import { Navbar, Nav, Container, NavDropdown, Button } from "react-bootstrap";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faBars, faTimes } from "@fortawesome/free-solid-svg-icons";
 import logo from "/images/Musgrave.png";
@@ -10,7 +10,7 @@ import { useAuth } from "../AuthContext";
 
 const Header = () => {
   const [expanded, setExpanded] = useState(false);
-  const { user } = useAuth();
+  const { user, logout } = useAuth();
 
   return (
     <Navbar bg="light" expand="lg" sticky="top" expanded={expanded}>
@@ -33,7 +33,7 @@ const Header = () => {
         </Navbar.Toggle>
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/TownOfMusgraveHarbour">
+            <Nav.Link as={Link} to="/">
               Home
             </Nav.Link>
             <Nav.Link as={Link} to="/town">
@@ -62,6 +62,12 @@ const Header = () => {
                 </NavDropdown.Item>
                 <NavDropdown.Item as={Link} to="/reminders">
                   Reminders
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Link} to="/staff-schedule">
+                  Staff Work Schedule
+                </NavDropdown.Item>
+                <NavDropdown.Item as={Button} onClick={logout}>
+                  Log Out
                 </NavDropdown.Item>
               </NavDropdown>
             )}

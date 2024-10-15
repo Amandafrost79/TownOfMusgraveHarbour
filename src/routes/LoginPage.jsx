@@ -26,6 +26,8 @@ const LoginPage = () => {
       navigate("/staff-timesheet");
     } else if (role === "reminders") {
       navigate("/reminders");
+    } else if (role === "schedule") {
+      navigate("/staff-schedule");
     }
   };
 
@@ -69,6 +71,7 @@ const LoginPage = () => {
                 <option value="councillor">Councillor</option>
                 <option value="staff">Staff</option>
                 <option value="reminders">Reminders</option>
+                <option value="schedule">Schedule</option>
               </Form.Select>
             </Form.Group>
 
